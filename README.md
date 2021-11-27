@@ -5,8 +5,8 @@
 ## Open-wc Starter App
 
 [![Built with open-wc recommendations](https://img.shields.io/badge/built%20with-open--wc-blue.svg)](https://github.com/open-wc)
-[![Build with Google fonts recommendations](https://img.shields.io/badge/built%20with-open--wc-blue.svg)](https://fonts.google.com/) 
-[![Build with Bootstrap recommendations](https://img.shields.io/badge/built%20with-open--wc-blue.svg)](https://getbootstrap.com/)
+[![Build with Google fonts recommendations](https://img.shields.io/badge/built%20with-Google-Fonts-blue.svg)](https://fonts.google.com/) 
+[![Build with Bootstrap recommendations](https://img.shields.io/badge/built%20with-Bootstrap-blue.svg)](https://getbootstrap.com/)
 
 ## Dev Quickstart
 
