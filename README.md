@@ -2,7 +2,7 @@
   <img width="200" src="https://open-wc.org/35ded306.svg"></img>
 </p>
 
-## Open-wc Starter App
+## Technologies 
 
 [![Built with open-wc recommendations](https://img.shields.io/badge/built%20with-open--wc-blue.svg)](https://open-wc.org/)
 [![Build with Google fonts recommendations](https://img.shields.io/badge/built%20with-GoogleFonts-blue.svg)](https://fonts.google.com/) 
