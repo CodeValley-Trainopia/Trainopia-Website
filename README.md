@@ -6,13 +6,25 @@
 
 [![Built with open-wc recommendations](https://img.shields.io/badge/built%20with-open--wc-blue.svg)](https://github.com/open-wc)
 
-## Quickstart
+## Dev Quickstart
 
-To get started:
+To get started with development:
 
 ```sh
 npm install 
 npm start
+open http://localhost:8000/
+```
+
+## Build Quickstart
+
+To get started with build:
+```sh
+npm run build
+- move assets imgs... etc to dist/assets folder 
+cd ./dist
+live-server .
+- open http://localhost:8080/
 ```
 
 ## Scripts
