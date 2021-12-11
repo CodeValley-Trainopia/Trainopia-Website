@@ -26,7 +26,7 @@ export class HowItWorksCard extends LitElement {
         }
         
         .inner-card img:hover {
-            
+            z-index: 2;
             transform: scale(1.5);
         }
         </style>
