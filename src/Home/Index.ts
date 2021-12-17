@@ -29,7 +29,7 @@ export class Index extends LitElement {
     render() {
         return html
         `
-        <navbar-comp IsRtl='false'></navbar-comp>
+        <navbar-comp IsRtl="true"></navbar-comp>
 
         <jumbotron-comp></jumbotron-comp>
     
