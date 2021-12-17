@@ -42,9 +42,9 @@ export class Navbar extends LitElement {
         }
         </style>
 
-        <nav style="background: #ebf4fa;" class="navbar fixed-top navbar-expand-lg fs-6 fw-bold">
+        <nav style="background: #ebf4fa;" class="navbar fixed-top navbar-expand-lg fs-6 fw-bold border-bottom border-5 border-primary">
             <div class="container-fluid">
-                <a class="navbar-brand  text-primary" href="./test.html">
+                
                 <span class="material-icons fs-1 text-muted ">
                public
                 </span> <a class="navbar-brand  text-primary" href="#">Trainopia</a>
@@ -59,7 +59,7 @@ export class Navbar extends LitElement {
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-primary text-muted" href="#">Features</a>
+                            <a class="nav-link text-primary text-muted" href="./events.html">Events</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-primary text-muted" href="#">Pricing</a>
