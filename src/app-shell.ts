@@ -6,9 +6,11 @@ import { Jumbotron } from './Home/Jumbotron.js';
 import { Navbar } from './Home/Navbar.js';
 import { Testimonial } from './Home/testimonial.js';
 import { AppShell } from './AppShell.js';
+import { Index} from './Home/Index.js';
 
 customElements.define('app-shell', AppShell);
 
+customElements.define('index-maincomp', Index);
 customElements.define('courses-comp', Courses);
 customElements.define('howitworks-comp', HowItWorks);
 customElements.define('jumbotron-comp', Jumbotron);
