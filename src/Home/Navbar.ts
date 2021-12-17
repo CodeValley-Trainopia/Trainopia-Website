@@ -1,6 +1,22 @@
 import { LitElement, html, css } from 'lit';
+import { LookUp } from '../LocalizationLookUp';
+import { property } from 'lit/decorators.js';
 
 export class Navbar extends LitElement {
+
+    static get properties() {
+        return {
+            direction: { type: String }
+        };
+    }
+
+    constructor() {
+        super();
+
+        // default values can be set from the constructor
+        this.dir = "rtl";
+    }
+
     createRenderRoot() {
         return this;
     }
@@ -45,9 +61,9 @@ export class Navbar extends LitElement {
         <nav style="background: #ebf4fa;" class="navbar fixed-top navbar-expand-lg fs-6 fw-bold border-bottom border-5 border-primary">
             <div class="container-fluid">
                 
-                <span class="material-icons fs-1 text-muted ">
+                <span class="material-icons fs-1 text-muted" >
                public
-                </span> <a class="navbar-brand  text-primary" href="#">Trainopia</a>
+                </span> <a class="navbar-brand  text-primary" href="#">${LookUp.LookUpTable.title.ar}</a>
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
