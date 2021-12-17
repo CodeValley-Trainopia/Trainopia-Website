@@ -1,19 +1,18 @@
 import { LitElement, html, css } from 'lit';
 import { LookUp } from '../LocalizationLookUp';
+import { property, customElement } from 'lit-element';
 
 export class Navbar extends LitElement {
-    IsRtl: boolean;
+    @property({type: String}) IsRtl: any;
 
     static get properties() {
         return {
-            IsRtl: { type: Boolean }
         };
     }
 
     constructor() {
         super();
 
-        this.IsRtl = false;
         // default values can be set from the constructor
         // this.dir = "rtl";
     }
@@ -59,7 +58,7 @@ export class Navbar extends LitElement {
         }
         </style>
 
-        <nav dir=${(this.IsRtl)? "rtl": "ltr"} style="background: #ebf4fa;" class="navbar fixed-top navbar-expand-lg fs-6 fw-bold border-bottom border-5 border-primary">
+        <nav dir=${(this.IsRtl === "true")? "rtl": "ltr"} style="background: #ebf4fa;" class="navbar fixed-top navbar-expand-lg fs-6 fw-bold border-bottom border-5 border-primary">
             <div class="container-fluid">
                 
                 <span class="material-icons fs-1 text-muted" >
