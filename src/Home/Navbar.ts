@@ -3,7 +3,7 @@ import { LookUp } from '../LocalizationLookUp';
 import { property, customElement } from 'lit-element';
 
 export class Navbar extends LitElement {
-    @property({type: String}) IsRtl: any;
+    @property({type: String}) IsRTL: any;
 
     static get properties() {
         return {
@@ -14,7 +14,6 @@ export class Navbar extends LitElement {
         super();
 
         // default values can be set from the constructor
-        // this.dir = "rtl";
     }
 
     createRenderRoot() {
@@ -58,12 +57,12 @@ export class Navbar extends LitElement {
         }
         </style>
 
-        <nav dir=${(this.IsRtl === "true")? "rtl": "ltr"} style="background: #ebf4fa;" class="navbar fixed-top navbar-expand-lg fs-6 fw-bold border-bottom border-5 border-primary">
+        <nav dir=${(this.IsRTL === "true")? "rtl": "ltr"} style="background: #ebf4fa;" class="navbar fixed-top navbar-expand-lg fs-6 fw-bold border-bottom border-5 border-primary">
             <div class="container-fluid">
                 
                 <span class="material-icons fs-1 text-muted" >
                public
-                </span> <a class="navbar-brand  text-primary" href="#">${LookUp.LookUpTable.title.ar}</a>
+                </span> <a class="navbar-brand  text-primary" href="#">${(this.IsRTL === "true")? LookUp.LookUpTable.title.ar: LookUp.LookUpTable.title.en}</a>
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -94,10 +93,39 @@ export class Navbar extends LitElement {
                             </ul>
                         </li>
                     </ul>
+                    <button class="btn" type="button" @click=${this.changeIsRTL}>
+                        <span class="material-icons fs-1 text-muted">
+                        language
+                        </span>
+                    </button>
                 </div>
+
+                
             </div>
         </nav>
 
+        <jumbotron-comp></jumbotron-comp>
+    
+        <br>
+    
+        <howitworks-comp></howitworks-comp>
+    
+        <br>
+    
+        <courses-comp></courses-comp>
+    
+        <br>
+    
+        <testimonial-comp></testimonial-comp>
+    
+        <br>
+    
+        <footer-comp></footer-comp>
         `;
+    }
+
+    changeIsRTL(){
+        console.log("hello");
+        this.IsRTL = (this.IsRTL === "true")? "false": "true";
     }
 }

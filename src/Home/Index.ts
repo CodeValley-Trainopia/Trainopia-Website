@@ -1,4 +1,4 @@
-import { LitElement, html, css } from 'lit';
+import { LitElement, html, css } from 'lit-element';
 import { LookUp } from '../LocalizationLookUp';
 import { property } from 'lit/decorators.js';
 
@@ -7,7 +7,7 @@ export class Index extends LitElement {
 
     static get properties() {
         return {
-            
+
         };
     }
 
@@ -29,25 +29,7 @@ export class Index extends LitElement {
     render() {
         return html
         `
-        <navbar-comp IsRtl="true"></navbar-comp>
-
-        <jumbotron-comp></jumbotron-comp>
-    
-        <br>
-    
-        <howitworks-comp></howitworks-comp>
-    
-        <br>
-    
-        <courses-comp></courses-comp>
-    
-        <br>
-    
-        <testimonial-comp></testimonial-comp>
-    
-        <br>
-    
-        <footer-comp></footer-comp>
+        <navbar-comp></navbar-comp>
         
         `;
     }
