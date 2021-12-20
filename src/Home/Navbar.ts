@@ -62,7 +62,7 @@ export class Navbar extends LitElement {
                 
                 <span class="material-icons fs-1 text-muted" >
                public
-                </span> <a class="navbar-brand  text-primary" href="#">${(this.IsRTL === "true")? LookUp.LookUpTable.title.ar: LookUp.LookUpTable.title.en}</a>
+                </span> <a class="navbar-brand  text-primary" href="#">${(this.IsRTL === "true")? LookUp.LookUpTable.menu_title.ar: LookUp.LookUpTable.menu_title.en}</a>
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,17 +71,17 @@ export class Navbar extends LitElement {
                 <div class="collapse navbar-collapse " id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#">${(this.IsRTL === "true")? LookUp.LookUpTable.menu_home.ar: LookUp.LookUpTable.menu_home.en}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-primary text-muted" href="#">About Us</a>
+                            <a class="nav-link text-primary text-muted" href="#">${(this.IsRTL === "true")? LookUp.LookUpTable.menu_about.ar: LookUp.LookUpTable.menu_about.en}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-primary text-muted">Contact Us</a>
+                            <a class="nav-link text-primary text-muted">${(this.IsRTL === "true")? LookUp.LookUpTable.menu_contact.ar: LookUp.LookUpTable.menu_contact.en}</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-primary  text-muted" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Events
+                            ${(this.IsRTL === "true")? LookUp.LookUpTable.menu_events.ar: LookUp.LookUpTable.menu_events.en}
                             </a>
                             <ul class="dropdown-menu"  aria-labelledby="navbarDropdownMenuLink">
                                 <li><a class="dropdown-item fs-6 fw-bold text-primary text-muted" href="#">Event-1</a></li>
@@ -101,23 +101,23 @@ export class Navbar extends LitElement {
             </div>
         </nav>
 
-        <jumbotron-comp IsRTL=${(this.IsRTL === "true")? "true": "false"}></jumbotron-comp>
+        <jumbotron-comp IsRTL=${this.IsRTL}></jumbotron-comp>
     
         <br>
     
-        <howitworks-comp IsRTL=${(this.IsRTL === "true")? "true": "false"}></howitworks-comp>
+        <howitworks-comp IsRTL=${this.IsRTL}></howitworks-comp>
     
         <br>
     
-        <courses-comp IsRTL=${(this.IsRTL === "true")? "true": "false"}></courses-comp>
+        <courses-comp IsRTL=${this.IsRTL}></courses-comp>
     
         <br>
     
-        <testimonial-comp IsRTL=${(this.IsRTL === "true")? "true": "false"}></testimonial-comp>
+        <testimonial-comp IsRTL=${this.IsRTL}></testimonial-comp>
     
         <br>
     
-        <footer-comp IsRTL=${(this.IsRTL === "true")? "true": "false"}></footer-comp>
+        <footer-comp IsRTL=${this.IsRTL}></footer-comp>
         `;
     }
 
