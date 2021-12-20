@@ -72,8 +72,5 @@ export class LookUp {
             ar: "اعرف اكثر",
             en: "howitworks_card_text_3"
         },
-        
-
-
     }
 }
