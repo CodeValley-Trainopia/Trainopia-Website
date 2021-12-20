@@ -72,5 +72,57 @@ export class LookUp {
             ar: "اعرف اكثر",
             en: "howitworks_card_text_3"
         },
+        courses_title: {
+            ar: "برامجنا التعليمية",
+            en: "Our Courses"
+        },
+        course_title_1: {
+            ar: "برامجنا التعليمية",
+            en: "Our Courses"
+        },
+        course_text_1: {
+            ar: "برامجنا التعليمية",
+            en: "Our Courses"
+        },
+        course_buttonL_1: {
+            ar: "برامجنا التعليمية",
+            en: "Our Courses"
+        },
+        course_buttonR_1: {
+            ar: "برامجنا التعليمية",
+            en: "Our Courses"
+        },
+        course_title_2: {
+            ar: "برامجنا التعليمية",
+            en: "Our Courses"
+        },
+        course_text_2: {
+            ar: "برامجنا التعليمية",
+            en: "Our Courses"
+        },
+        course_buttonL_2: {
+            ar: "برامجنا التعليمية",
+            en: "Our Courses"
+        },
+        course_buttonR_2: {
+            ar: "برامجنا التعليمية",
+            en: "Our Courses"
+        },
+        course_title_3: {
+            ar: "برامجنا التعليمية",
+            en: "Our Courses"
+        },
+        course_text_3: {
+            ar: "برامجنا التعليمية",
+            en: "Our Courses"
+        },
+        course_buttonL_3: {
+            ar: "برامجنا التعليمية",
+            en: "Our Courses"
+        },
+        course_buttonR_3: {
+            ar: "برامجنا التعليمية",
+            en: "Our Courses"
+        }
     }
 }
