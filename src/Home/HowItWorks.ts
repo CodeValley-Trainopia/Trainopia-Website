@@ -1,10 +1,18 @@
 import { LitElement, html, css } from 'lit';
 import { HowItWorksCard } from './HowItWorksCard';
+import { LookUp } from '../LocalizationLookUp';
 
 customElements.define('howitworkscard-comp', HowItWorksCard);
 
 export class HowItWorks extends LitElement {
-    
+    IsRTL: unknown;
+
+    static get properties() {
+        return {
+            IsRTL: { type: String }
+        };
+    }
+
     // createRenderRoot() {
     //     return this;
     // }
@@ -24,11 +32,11 @@ export class HowItWorks extends LitElement {
 
         <div class="container">
 
-                <div class="card border-0">
+                <div class="card border-0" dir=${(this.IsRTL === "true")? "rtl": "ltr"}>
                     <div class="card-header border-5">
                         <div class="row">
                             <div class="container d-flex align-items-center justify-content-center">
-                                <h1 class="fs-1 fw-bolder text-muted">How it Works!</h1>
+                                <h1 class="fs-1 fw-bolder text-muted">${(this.IsRTL === "true")? LookUp.LookUpTable.howitworks_title.ar: LookUp.LookUpTable.howitworks_title.en}</h1>
                             </div>
                         </div>
                     </div>
@@ -37,13 +45,13 @@ export class HowItWorks extends LitElement {
             <br>
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-center justify-content-center">
-                    <howitworkscard-comp></howitworkscard-comp>
+                    <howitworkscard-comp IsRTL=${(this.IsRTL === "true")? "true": "false"}></howitworkscard-comp>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-center justify-content-center">
-                    <howitworkscard-comp></howitworkscard-comp>
+                    <howitworkscard-comp IsRTL=${(this.IsRTL === "true")? "true": "false"}></howitworkscard-comp>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-center justify-content-center">
-                    <howitworkscard-comp></howitworkscard-comp>
+                    <howitworkscard-comp IsRTL=${(this.IsRTL === "true")? "true": "false"}></howitworkscard-comp>
                 </div>
             </div>
         </div>
