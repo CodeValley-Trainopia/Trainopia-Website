@@ -1,6 +1,6 @@
 import { LitElement, html, css } from 'lit';
 import { LookUp } from '../LocalizationLookUp';
-import { property, customElement } from 'lit-element';
+import { property } from 'lit-element';
 
 export class Navbar extends LitElement {
     @property({type: String}) IsRTL: any;
@@ -74,22 +74,19 @@ export class Navbar extends LitElement {
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-primary text-muted" href="./events.html">Events</a>
+                            <a class="nav-link text-primary text-muted" href="#">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-primary text-muted" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-primary text-muted">Disabled</a>
+                            <a class="nav-link text-primary text-muted">Contact Us</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-primary  text-muted" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown link
+                            Events
                             </a>
                             <ul class="dropdown-menu"  aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item fs-6 fw-bold text-primary text-muted" href="#">Action</a></li>
-                                <li><a class="dropdown-item fs-6 fw-bold text-primary text-muted" href="#">Another action</a></li>
-                                <li><a class="dropdown-item fs-6 fw-bold text-primary text-muted" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item fs-6 fw-bold text-primary text-muted" href="#">Event-1</a></li>
+                                <li><a class="dropdown-item fs-6 fw-bold text-primary text-muted" href="#">Event-2</a></li>
+                                <li><a class="dropdown-item fs-6 fw-bold text-primary text-muted" href="#">Event-3</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -104,23 +101,23 @@ export class Navbar extends LitElement {
             </div>
         </nav>
 
-        <jumbotron-comp></jumbotron-comp>
+        <jumbotron-comp IsRTL=${(this.IsRTL === "true")? "true": "false"}></jumbotron-comp>
     
         <br>
     
-        <howitworks-comp></howitworks-comp>
+        <howitworks-comp IsRTL=${(this.IsRTL === "true")? "true": "false"}></howitworks-comp>
     
         <br>
     
-        <courses-comp></courses-comp>
+        <courses-comp IsRTL=${(this.IsRTL === "true")? "true": "false"}></courses-comp>
     
         <br>
     
-        <testimonial-comp></testimonial-comp>
+        <testimonial-comp IsRTL=${(this.IsRTL === "true")? "true": "false"}></testimonial-comp>
     
         <br>
     
-        <footer-comp></footer-comp>
+        <footer-comp IsRTL=${(this.IsRTL === "true")? "true": "false"}></footer-comp>
         `;
     }
 
