@@ -45,13 +45,25 @@ export class HowItWorks extends LitElement {
             <br>
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-center justify-content-center">
-                    <howitworkscard-comp IsRTL=${(this.IsRTL === "true")? "true": "false"}></howitworkscard-comp>
+                    <howitworkscard-comp IsRTL=${(this.IsRTL === "true")? "true": "false"} 
+                    Header=${(this.IsRTL === "true")? LookUp.LookUpTable.howitworks_card_header_1.ar: LookUp.LookUpTable.howitworks_card_header_1.en}
+                    Title=${(this.IsRTL === "true")? LookUp.LookUpTable.howitworks_card_title_1.ar: LookUp.LookUpTable.howitworks_card_title_1.en}
+                    Text=${(this.IsRTL === "true")? LookUp.LookUpTable.howitworks_card_text_1.ar: LookUp.LookUpTable.howitworks_card_text_1.en}
+                    ></howitworkscard-comp>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-center justify-content-center">
-                    <howitworkscard-comp IsRTL=${(this.IsRTL === "true")? "true": "false"}></howitworkscard-comp>
+                    <howitworkscard-comp IsRTL=${(this.IsRTL === "true")? "true": "false"}
+                    Header=${(this.IsRTL === "true")? LookUp.LookUpTable.howitworks_card_header_2.ar: LookUp.LookUpTable.howitworks_card_header_2.en}
+                    Title=${(this.IsRTL === "true")? LookUp.LookUpTable.howitworks_card_title_2.ar: LookUp.LookUpTable.howitworks_card_title_2.en}
+                    Text=${(this.IsRTL === "true")? LookUp.LookUpTable.howitworks_card_text_2.ar: LookUp.LookUpTable.howitworks_card_text_2.en}
+                    ></howitworkscard-comp>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-center justify-content-center">
-                    <howitworkscard-comp IsRTL=${(this.IsRTL === "true")? "true": "false"}></howitworkscard-comp>
+                    <howitworkscard-comp IsRTL=${(this.IsRTL === "true")? "true": "false"}
+                    Header=${(this.IsRTL === "true")? LookUp.LookUpTable.howitworks_card_header_2.ar: LookUp.LookUpTable.howitworks_card_header_2.en}
+                    Title=${(this.IsRTL === "true")? LookUp.LookUpTable.howitworks_card_title_2.ar: LookUp.LookUpTable.howitworks_card_title_2.en}
+                    Text=${(this.IsRTL === "true")? LookUp.LookUpTable.howitworks_card_text_2.ar: LookUp.LookUpTable.howitworks_card_text_2.en}
+                    ></howitworkscard-comp>
                 </div>
             </div>
         </div>
