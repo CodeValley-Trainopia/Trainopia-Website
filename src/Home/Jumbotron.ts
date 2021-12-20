@@ -1,6 +1,15 @@
 import { LitElement, html, css } from 'lit';
+import { LookUp } from '../LocalizationLookUp';
+import { property } from 'lit-element';
 
 export class Jumbotron extends LitElement {
+    IsRTL: unknown;
+
+    static get properties() {
+        return {
+            IsRTL: { type: String }
+        };
+    }
     
     createRenderRoot() {
         return this;
@@ -73,16 +82,16 @@ export class Jumbotron extends LitElement {
                 </div>
             </div>
 
-            <div class="container">
+            <div class="container" dir=${(this.IsRTL === "true")? "rtl": "ltr"}>
                 <div class="row position-absolute top-50 start-0 translate-middle-y w-100">
                     <div class="col-sm-0 col-md-1">
 
                     </div>
                     <div class="col-sm-12 col-md-5">
                         <div class="container-fluid text-wrap text-light py-5">
-                            <p class="display-5 fw-bold">Custom jumbotron</p>
-                            <p class="fs-6 fw-normal">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
-                            <button class="btn btn-outline-primary btn-lg" type="button">Example button</button>
+                            <p class="display-5 fw-bold">${(this.IsRTL === "true")? LookUp.LookUpTable.jumbotron_title.ar: LookUp.LookUpTable.jumbotron_title.en}</p>
+                            <p class="fs-6 fw-normal">${(this.IsRTL === "true")? LookUp.LookUpTable.jumbotron_text.ar: LookUp.LookUpTable.jumbotron_text.en}</p>
+                            <button class="btn btn-outline-primary btn-lg" type="button">${(this.IsRTL === "true")? LookUp.LookUpTable.jumbotron_button.ar: LookUp.LookUpTable.jumbotron_button.en}</button>
                         </div>
                     </div>
                 </div>
