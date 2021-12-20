@@ -1,7 +1,21 @@
 import { LitElement, html, css } from 'lit';
+import { LookUp } from '../LocalizationLookUp';
 
 export class HowItWorksCard extends LitElement {
+    IsRTL: unknown;
+    Header: unknown;
+    Title: unknown;
+    Text: unknown;
     
+    static get properties() {
+        return {
+            IsRTL: { type: String },
+            Header: { type: String },
+            Title: { type: String },
+            Text: { type: String }
+        };
+    }
+
     // createRenderRoot() {
     //     return this;
     // }
@@ -32,15 +46,15 @@ export class HowItWorksCard extends LitElement {
         </style>
         
         <div class="card bg-transparent border-0 p-2" style="max-width: 18rem;">
-            <div class="card-header border-5 mb-3">Header</div>
+            <div class="card-header border-5 mb-3" dir=${(this.IsRTL === "true")? "rtl": "ltr"}>${this.Header}</div>
             
             <div class="card mb-3 border-0 bg-transparent inner-card">
                 
                 <img src="./assets/1.jpg" class="w-100 h-50 rounded-3" alt="..." style="object-fit: cover; object-position: 50% 20%;" />
                 
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="card-body" dir=${(this.IsRTL === "true")? "rtl": "ltr"}>
+                    <h5 class="card-title">${this.Title}</h5>
+                    <p class="card-text">${this.Text}</p>
                 </div>
             </div>
         </div>  
