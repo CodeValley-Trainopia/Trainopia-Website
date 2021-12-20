@@ -76,53 +76,77 @@ export class LookUp {
             ar: "برامجنا التعليمية",
             en: "Our Courses"
         },
-        course_title_1: {
-            ar: "برامجنا التعليمية",
-            en: "Our Courses"
+        course_1: {
+            title: {
+                ar: "برامجنا التعليمية",
+                en: "Our Courses"
+            },
+            text: {
+                ar: "برامجنا التعليمية",
+                en: "Our Courses"
+            },
+            buttonL: {
+                ar: "برامجنا التعليمية",
+                en: "Our Courses"
+            },
+            buttonR: {
+                ar: "برامجنا التعليمية",
+                en: "Our Courses"
+            }
         },
-        course_text_1: {
-            ar: "برامجنا التعليمية",
-            en: "Our Courses"
+        course_2: {
+            title: {
+                ar: "برامجنا التعليمية",
+                en: "Our Courses"
+            },
+            text: {
+                ar: "برامجنا التعليمية",
+                en: "Our Courses"
+            },
+            buttonL: {
+                ar: "برامجنا التعليمية",
+                en: "Our Courses"
+            },
+            buttonR: {
+                ar: "برامجنا التعليمية",
+                en: "Our Courses"
+            }
+        },        
+        course_3: {
+            title: {
+                ar: "برامجنا التعليمية",
+                en: "Our Courses"
+            },
+            text: {
+                ar: "برامجنا التعليمية",
+                en: "Our Courses"
+            },
+            buttonL: {
+                ar: "برامجنا التعليمية",
+                en: "Our Courses"
+            },
+            buttonR: {
+                ar: "برامجنا التعليمية",
+                en: "Our Courses"
+            }
         },
-        course_buttonL_1: {
-            ar: "برامجنا التعليمية",
-            en: "Our Courses"
-        },
-        course_buttonR_1: {
-            ar: "برامجنا التعليمية",
-            en: "Our Courses"
-        },
-        course_title_2: {
-            ar: "برامجنا التعليمية",
-            en: "Our Courses"
-        },
-        course_text_2: {
-            ar: "برامجنا التعليمية",
-            en: "Our Courses"
-        },
-        course_buttonL_2: {
-            ar: "برامجنا التعليمية",
-            en: "Our Courses"
-        },
-        course_buttonR_2: {
-            ar: "برامجنا التعليمية",
-            en: "Our Courses"
-        },
-        course_title_3: {
-            ar: "برامجنا التعليمية",
-            en: "Our Courses"
-        },
-        course_text_3: {
-            ar: "برامجنا التعليمية",
-            en: "Our Courses"
-        },
-        course_buttonL_3: {
-            ar: "برامجنا التعليمية",
-            en: "Our Courses"
-        },
-        course_buttonR_3: {
-            ar: "برامجنا التعليمية",
-            en: "Our Courses"
+        course_4: {
+            title: {
+                ar: "برامجنا التعليمية",
+                en: "Our Courses"
+            },
+            text: {
+                ar: "برامجنا التعليمية",
+                en: "Our Courses"
+            },
+            buttonL: {
+                ar: "برامجنا التعليمية",
+                en: "Our Courses"
+            },
+            buttonR: {
+                ar: "برامجنا التعليمية",
+                en: "Our Courses"
+            }
         }
     }
 }
