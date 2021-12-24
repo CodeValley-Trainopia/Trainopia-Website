@@ -7,6 +7,7 @@ export class Navbar extends LitElement {
 
     static get properties() {
         return {
+            
         };
     }
 
@@ -122,7 +123,7 @@ export class Navbar extends LitElement {
     }
 
     changeIsRTL(){
-        console.log("hello");
+        console.log(this.renderRoot.querySelector('footer-comp')?.getAttribute("isrtl"));
         this.IsRTL = (this.IsRTL === "true")? "false": "true";
     }
 }
