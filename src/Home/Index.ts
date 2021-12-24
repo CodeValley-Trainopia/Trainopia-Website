@@ -55,7 +55,6 @@ export class Index extends LitElement {
     }
 
     ToggleRTL() {
-        console.log( this.renderRoot.querySelector('navbar-comp')?.getAttribute("RTL"));
-        this.IsRTL = this.renderRoot.querySelector('navbar-comp')?.getAttribute("isrtl");
+        this.IsRTL = this.renderRoot.querySelector('navbar-comp')?.getAttribute("RTL")
     }
 }
