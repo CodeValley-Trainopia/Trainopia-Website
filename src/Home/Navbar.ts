@@ -4,10 +4,9 @@ import { property } from 'lit-element';
 
 export class Navbar extends LitElement {
     @property({type: String}) IsRTL: any;
-
+    
     static get properties() {
         return {
-            
         };
     }
 
@@ -96,34 +95,17 @@ export class Navbar extends LitElement {
                         language
                         </span>
                     </button>
-                </div>
-
-                
+                </div>                
             </div>
         </nav>
 
-        <jumbotron-comp IsRTL=${this.IsRTL}></jumbotron-comp>
-    
-        <br>
-    
-        <howitworks-comp IsRTL=${this.IsRTL}></howitworks-comp>
-    
-        <br>
-    
-        <courses-comp IsRTL=${this.IsRTL}></courses-comp>
-    
-        <br>
-    
-        <testimonial-comp IsRTL=${this.IsRTL}></testimonial-comp>
-    
-        <br>
-    
-        <footer-comp IsRTL=${this.IsRTL}></footer-comp>
+
         `;
     }
 
-    changeIsRTL(){
-        console.log(this.renderRoot.querySelector('footer-comp')?.getAttribute("isrtl"));
+    changeIsRTL(){       
+        this.setAttribute("RTL", this.IsRTL);
+        console.log(this);
         this.IsRTL = (this.IsRTL === "true")? "false": "true";
     }
 }
