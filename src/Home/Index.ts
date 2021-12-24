@@ -14,6 +14,7 @@ export class Index extends LitElement {
 
     constructor() {
         super();
+        this.IsRTL="true"
     }
 
     createRenderRoot() {
