@@ -7,6 +7,7 @@ import { Navbar } from './Home/Navbar.js';
 import { Testimonial } from './Home/testimonial.js';
 import { AppShell } from './AppShell.js';
 import { Index} from './Home/Index.js';
+import { FlipCard } from './Event/FlipCard.js';
 
 customElements.define('app-shell', AppShell);
 
@@ -20,3 +21,6 @@ customElements.define('testimonial-comp', Testimonial);
 
 
 customElements.define('event_jumbotron-comp', EventJumbotron);
+
+customElements.define('event_flipcard-comp', FlipCard);
+
