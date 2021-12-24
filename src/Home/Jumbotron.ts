@@ -91,7 +91,7 @@ export class Jumbotron extends LitElement {
                         <div class="container-fluid text-wrap text-light py-5">
                             <p class="display-5 fw-bold">${(this.IsRTL === "true")? LookUp.LookUpTable.jumbotron_title.ar: LookUp.LookUpTable.jumbotron_title.en}</p>
                             <p class="fs-6 fw-normal">${(this.IsRTL === "true")? LookUp.LookUpTable.jumbotron_text.ar: LookUp.LookUpTable.jumbotron_text.en}</p>
-                            <button class="btn btn-outline-primary btn-lg" type="button">${(this.IsRTL === "true")? LookUp.LookUpTable.jumbotron_button.ar: LookUp.LookUpTable.jumbotron_button.en}</button>
+                            <button class="btn btn-outline-primary btn-lg fs-3 fw-bolder border-3" type="button">${(this.IsRTL === "true")? LookUp.LookUpTable.jumbotron_button.ar: LookUp.LookUpTable.jumbotron_button.en}</button>
                         </div>
                     </div>
                 </div>
