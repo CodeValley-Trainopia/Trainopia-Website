@@ -1,7 +1,11 @@
 import { LitElement, html, css } from 'lit';
+import { property } from 'lit-element';
 
 export class FlipCard extends LitElement {
     
+    @property({type: String}) IsRTL: any;
+
+
     createRenderRoot() {
         return this;
     }
@@ -74,7 +78,7 @@ export class FlipCard extends LitElement {
     }
 
     toggle(){
-        var FlipCard = this.renderRoot.querySelector('.FlipCard');
+        var FlipCard = this.renderRoot.querySelector('.FlipCard');        
         FlipCard?.classList.toggle('is-flipped');
     }
 
