@@ -5,6 +5,10 @@ import { LookUp } from '../LocalizationLookUp';
 customElements.define('course-comp', Course);
 export class Courses extends LitElement {
     IsRTL: unknown;
+    
+    createRenderRoot() {
+        return this;
+    }
 
     static get properties() {
         return {
