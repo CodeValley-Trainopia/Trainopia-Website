@@ -221,7 +221,7 @@
     <div class="tab-content my-5" id="v-pills-tabContent">
         <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
             <div class="frame mx-auto">
-                <div id="gallery" class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+                <div id="gallery" class="my-gallery-01" itemscope itemtype="http://schema.org/ImageGallery">
 
                     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                         <a href="./assets/gallery/full-image/IMG (1).JPG" itemprop="contentUrl" data-size="2048x1365">
@@ -1029,7 +1029,7 @@
         </div>
         <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
             <div class="frame mx-auto">
-                <div id="gallery" class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+                <div id="gallery" class="my-gallery-02" itemscope itemtype="http://schema.org/ImageGallery">
 
                     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                         <a href="./assets/gallery/full-image/IMG (1).JPG" itemprop="contentUrl" data-size="2048x1365">
@@ -1837,7 +1837,7 @@
         </div>
         <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
             <div class="frame mx-auto">
-                <div id="gallery" class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+                <div id="gallery" class="my-gallery-03" itemscope itemtype="http://schema.org/ImageGallery">
 
                     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                         <a href="./assets/gallery/full-image/IMG (1).JPG" itemprop="contentUrl" data-size="2048x1365">
@@ -2645,7 +2645,7 @@
         </div>
         <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
             <div class="frame mx-auto">
-                <div id="gallery" class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+                <div id="gallery" class="my-gallery-04" itemscope itemtype="http://schema.org/ImageGallery">
 
                     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                         <a href="./assets/gallery/full-image/IMG (1).JPG" itemprop="contentUrl" data-size="2048x1365">
@@ -3696,7 +3696,10 @@
         };
 
         // execute above function
-        initPhotoSwipeFromDOM('.my-gallery');
+        initPhotoSwipeFromDOM('.my-gallery-01');
+        initPhotoSwipeFromDOM('.my-gallery-02');
+        initPhotoSwipeFromDOM('.my-gallery-03');
+        initPhotoSwipeFromDOM('.my-gallery-04');
     </script>
 
     <script src="./lazysizes/lazysizes.min.js" async=""></script>
