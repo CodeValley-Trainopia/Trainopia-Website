@@ -71,10 +71,13 @@ export class Navbar extends LitElement {
                 <div class="collapse navbar-collapse " id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">${(this.IsRTL === "true")? LookUp.LookUpTable.menu_home.ar: LookUp.LookUpTable.menu_home.en}</a>
+                            <a class="nav-link active" href="./index.html">${(this.IsRTL === "true")? LookUp.LookUpTable.menu_home.ar: LookUp.LookUpTable.menu_home.en}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-primary text-muted" href="#">${(this.IsRTL === "true")? LookUp.LookUpTable.menu_about.ar: LookUp.LookUpTable.menu_about.en}</a>
+                            <a class="nav-link text-primary text-muted" href="./gallery.html">${(this.IsRTL === "true")? LookUp.LookUpTable.menu_gallery.ar: LookUp.LookUpTable.menu_gallery.en}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary text-muted">${(this.IsRTL === "true")? LookUp.LookUpTable.menu_about.ar: LookUp.LookUpTable.menu_about.en}</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-primary text-muted">${(this.IsRTL === "true")? LookUp.LookUpTable.menu_contact.ar: LookUp.LookUpTable.menu_contact.en}</a>

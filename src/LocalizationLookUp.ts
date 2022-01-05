@@ -8,6 +8,10 @@ export class LookUp {
             ar: "الرئيسية",
             en: "Home"
         },
+        menu_gallery: {
+            ar: "الصور",
+            en: "Gallery"
+        },
         menu_about: {
             ar: "من نحن",
             en: "About Us"
