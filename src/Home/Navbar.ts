@@ -87,9 +87,9 @@ export class Navbar extends LitElement {
                             ${(this.IsRTL === "true")? LookUp.LookUpTable.menu_events.ar: LookUp.LookUpTable.menu_events.en}
                             </a>
                             <ul class="dropdown-menu"  aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item fs-6 fw-bold text-primary text-muted" href="#">Event-1</a></li>
-                                <li><a class="dropdown-item fs-6 fw-bold text-primary text-muted" href="#">Event-2</a></li>
-                                <li><a class="dropdown-item fs-6 fw-bold text-primary text-muted" href="#">Event-3</a></li>
+                                <li><a class="dropdown-item fs-6 fw-bold text-primary text-muted" href="./events.html">Event-1</a></li>
+                                <li><a class="dropdown-item fs-6 fw-bold text-primary text-muted" href="./events.html">Event-2</a></li>
+                                <li><a class="dropdown-item fs-6 fw-bold text-primary text-muted" href="./events.html">Event-3</a></li>
                             </ul>
                         </li>
                     </ul>
