@@ -31,59 +31,56 @@
     <link rel="stylesheet" href="./photoswipe-dist/default-skin/default-skin.css">
     <style>
         #gallery {
-            line-height: 0;
-            -webkit-column-count: 3;
-            -webkit-column-gap: 5px;
-            -moz-column-count: 3;
-            -moz-column-gap: 5px;
-            column-count: 3;
-            column-gap: 5px;
-            
+            display: grid;
+            grid-template-columns: max-content max-content max-content;
+            column-gap: 15px;
+            row-gap: 15px;
+            padding: 15px;
+            background-color: #2196F3;
+            width: max-content;
         }
 
         #gallery img {
-            width: 100% !important;
-            height: auto !important;
-            margin-bottom: 5px;
-            /* to match column gap */
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 5px;
+            font-size: 30px;
+            text-align: center;
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
         }
 
         #gallery figure {
-            width: 100% !important;
-            height: auto !important;
-            margin-bottom: 0px;
-            /* to match column gap */
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 5px;
+            font-size: 30px;
+            text-align: center;
+            width: 250px;
         }
 
         @media (max-width: 1200px) {
             #gallery {
-                -moz-column-count: 4;
-                -webkit-column-count: 4;
-                column-count: 4;
+                grid-template-columns: max-content max-content max-content;
             }
         }
 
         @media (max-width: 1000px) {
             #gallery {
-                -moz-column-count: 3;
-                -webkit-column-count: 3;
-                column-count: 3;
+                grid-template-columns: max-content max-content;
             }
         }
 
         @media (max-width: 800px) {
             #gallery {
-                -moz-column-count: 1;
-                -webkit-column-count: 1;
-                column-count: 1;
+                grid-template-columns: max-content max-content;
             }
         }
 
         @media (max-width: 400px) {
             #gallery {
-                -moz-column-count: 1;
-                -webkit-column-count: 1;
-                column-count: 1;
+                grid-template-columns: max-content;
             }
         }
 
@@ -102,6 +99,7 @@
             max-width: 60%;
             padding: 0rem;
             overflow-y: auto;
+            overflow-x: auto;
             direction: ltr;
             scrollbar-color: #2874e6 #e4e4e4;
             scrollbar-width: thin;
@@ -134,7 +132,7 @@
 </head>
 
 <body>
-    <navbar-comp></navbar-comp>
+    <navbar-comp IsRTL="true"></navbar-comp>
 
     <br>
     <br>
@@ -204,8 +202,6 @@
         </div>
 
     </div>
-
-
 
     <div class="container my-5">
         <div class="card border-0">
