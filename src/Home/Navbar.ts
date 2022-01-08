@@ -109,5 +109,6 @@ export class Navbar extends LitElement {
     changeIsRTL(){       
         this.IsRTL = (this.IsRTL === "true")? "false": "true";
         this.setAttribute("RTL", this.IsRTL);
+        localStorage.setItem('RTL', this.IsRTL);
     }
 }
