@@ -32,28 +32,34 @@
     <style>
         #gallery {
             display: grid;
-            grid-template-columns: max-content max-content max-content;
+            grid-template-columns: max-content max-content max-content max-content;
             column-gap: 15px;
-            row-gap: 15px;
             padding: 15px;
-            background-color: #2196F3;
             width: max-content;
+            background-color: #2195f380;
+        }
+        
+        body {
+            
+
         }
 
         #gallery img {
-            background-color: rgba(255, 255, 255, 0.8);
-            border: 1px solid rgba(0, 0, 0, 0.8);
-            padding: 5px;
+            background-color: rgba(255, 255, 255, 0);
+            border: 2px solid rgb(0, 0, 0);
+            padding: 0px;
             font-size: 30px;
             text-align: center;
             width: 250px;
             height: 250px;
             object-fit: cover;
+            pointer-events: none;
         }
 
         #gallery figure {
-            background-color: rgba(255, 255, 255, 0.8);
-            border: 1px solid rgba(0, 0, 0, 0.8);
+            
+            background-color: #2196F3;
+            border: 2px solid rgba(0, 0, 0, 0.8);
             padding: 5px;
             font-size: 30px;
             text-align: center;
@@ -62,7 +68,7 @@
 
         @media (max-width: 1200px) {
             #gallery {
-                grid-template-columns: max-content max-content max-content;
+                grid-template-columns: max-content max-content max-content max-content;
             }
         }
 
@@ -78,26 +84,22 @@
             }
         }
 
-        @media (max-width: 400px) {
+        @media (max-width: 500px) {
             #gallery {
                 grid-template-columns: max-content;
             }
         }
 
-        .my-gallery figure {
-            display: block;
-            float: left;
-            margin: 0 5px 5px 0;
-        }
+
 
         #gallery figcaption {
             display: none;
         }
 
         .frame {
-            max-height: 500px;
-            max-width: 60%;
-            padding: 0rem;
+            max-height: 850px;
+            max-width: fit-content;
+            padding-right: 10px;
             overflow-y: auto;
             overflow-x: auto;
             direction: ltr;
@@ -106,7 +108,7 @@
         }
 
         .frame::-webkit-scrollbar {
-            width: 20px;
+            width: 10px;
         }
 
         .frame::-webkit-scrollbar-track {
@@ -114,7 +116,7 @@
         }
 
         .frame::-webkit-scrollbar-thumb {
-            border: 5px solid transparent;
+            border: 10px solid transparent;
             background-clip: content-box;
             background-color: #2874e6;
         }
