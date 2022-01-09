@@ -1,9 +1,9 @@
 import { EventJumbotron } from './Event/EventJumbotron.js';
 import { Courses } from './Home/Courses.js';
-import { Footer } from './Home/Footer.js';
+import { Footer } from './Shared/Footer.js';
 import { HowItWorks } from './Home/HowItWorks.js';
 import { Jumbotron } from './Home/Jumbotron.js';
-import { Navbar } from './Home/Navbar.js';
+import { Navbar } from './Shared/Navbar.js';
 import { Testimonial } from './Home/testimonial.js';
 import { AppShell } from './AppShell.js';
 import { Index} from './Home/Index.js';
