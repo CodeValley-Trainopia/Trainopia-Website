@@ -6,15 +6,18 @@ export class Index extends LitElement {
 
     @property({type: String}) IsRTL: any;
 
+    First;
+
     static get properties() {
         return {
-
+            First : { type: Boolean }
         };
     }
 
     constructor() {
         super();
-        this.IsRTL="true"
+        this.IsRTL="true";
+        this.First = false;
     }
 
     createRenderRoot() {
@@ -56,6 +59,8 @@ export class Index extends LitElement {
     }
 
     ToggleRTL() {
+        if(this.renderRoot.querySelector('navbar-comp')?.getAttribute("First") == "False") return;
+
         this.IsRTL = this.renderRoot.querySelector('navbar-comp')?.getAttribute("RTL")
     }
 }
