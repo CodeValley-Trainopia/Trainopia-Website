@@ -71,10 +71,13 @@ export class Navbar extends LitElement {
                 <div class="collapse navbar-collapse " id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">${(this.IsRTL === "true")? LookUp.LookUpTable.menu_home.ar: LookUp.LookUpTable.menu_home.en}</a>
+                            <a class="nav-link active" href="./index.html">${(this.IsRTL === "true")? LookUp.LookUpTable.menu_home.ar: LookUp.LookUpTable.menu_home.en}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-primary text-muted" href="#">${(this.IsRTL === "true")? LookUp.LookUpTable.menu_about.ar: LookUp.LookUpTable.menu_about.en}</a>
+                            <a class="nav-link text-primary text-muted" href="./gallery.html">${(this.IsRTL === "true")? LookUp.LookUpTable.menu_gallery.ar: LookUp.LookUpTable.menu_gallery.en}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary text-muted">${(this.IsRTL === "true")? LookUp.LookUpTable.menu_about.ar: LookUp.LookUpTable.menu_about.en}</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-primary text-muted">${(this.IsRTL === "true")? LookUp.LookUpTable.menu_contact.ar: LookUp.LookUpTable.menu_contact.en}</a>
@@ -84,9 +87,9 @@ export class Navbar extends LitElement {
                             ${(this.IsRTL === "true")? LookUp.LookUpTable.menu_events.ar: LookUp.LookUpTable.menu_events.en}
                             </a>
                             <ul class="dropdown-menu"  aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item fs-6 fw-bold text-primary text-muted" href="#">Event-1</a></li>
-                                <li><a class="dropdown-item fs-6 fw-bold text-primary text-muted" href="#">Event-2</a></li>
-                                <li><a class="dropdown-item fs-6 fw-bold text-primary text-muted" href="#">Event-3</a></li>
+                                <li><a class="dropdown-item fs-6 fw-bold text-primary text-muted" href="./events.html">Event-1</a></li>
+                                <li><a class="dropdown-item fs-6 fw-bold text-primary text-muted" href="./events.html">Event-2</a></li>
+                                <li><a class="dropdown-item fs-6 fw-bold text-primary text-muted" href="./events.html">Event-3</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -106,5 +109,6 @@ export class Navbar extends LitElement {
     changeIsRTL(){       
         this.IsRTL = (this.IsRTL === "true")? "false": "true";
         this.setAttribute("RTL", this.IsRTL);
+        localStorage.setItem('RTL', this.IsRTL);
     }
 }
