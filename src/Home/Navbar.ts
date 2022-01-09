@@ -4,6 +4,7 @@ import { property } from 'lit-element';
 
 export class Navbar extends LitElement {
     @property({type: String}) IsRTL: any;
+    @property({type: String}) First: any;
     
     static get properties() {
         return {
@@ -12,8 +13,8 @@ export class Navbar extends LitElement {
 
     constructor() {
         super();
-
         // default values can be set from the constructor
+        this.setAttribute("First", "False");
     }
 
     createRenderRoot() {
@@ -68,7 +69,7 @@ export class Navbar extends LitElement {
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars text-primary"></i>
                 </button>
-                <div class="collapse navbar-collapse " id="navbarNav">
+                <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link active" href="./index.html">${(this.IsRTL === "true")? LookUp.LookUpTable.menu_home.ar: LookUp.LookUpTable.menu_home.en}</a>
@@ -86,7 +87,7 @@ export class Navbar extends LitElement {
                             <a class="nav-link dropdown-toggle text-primary  text-muted" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             ${(this.IsRTL === "true")? LookUp.LookUpTable.menu_events.ar: LookUp.LookUpTable.menu_events.en}
                             </a>
-                            <ul class="dropdown-menu"  aria-labelledby="navbarDropdownMenuLink">
+                            <ul class="dropdown-menu"  aria-labelledby="navbarDropdownMenuLink">                                
                                 <li><a class="dropdown-item fs-6 fw-bold text-primary text-muted" href="./events.html">Event-1</a></li>
                                 <li><a class="dropdown-item fs-6 fw-bold text-primary text-muted" href="./events.html">Event-2</a></li>
                                 <li><a class="dropdown-item fs-6 fw-bold text-primary text-muted" href="./events.html">Event-3</a></li>
@@ -107,6 +108,7 @@ export class Navbar extends LitElement {
     }
 
     changeIsRTL(){       
+        this.setAttribute("First", "True");
         this.IsRTL = (this.IsRTL === "true")? "false": "true";
         this.setAttribute("RTL", this.IsRTL);
         localStorage.setItem('RTL', this.IsRTL);
