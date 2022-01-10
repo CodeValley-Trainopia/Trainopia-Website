@@ -21,6 +21,5 @@ customElements.define('testimonial-comp', Testimonial);
 
 
 customElements.define('event_jumbotron-comp', EventJumbotron);
-
 customElements.define('event_flipcard-comp', FlipCard);
 
