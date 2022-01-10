@@ -43,7 +43,7 @@ export class HowItWorksCard extends LitElement {
 
             <event_flipcard-comp>
                 <div slot="front"> 
-                    <div class="card border-2 border-primary">
+                    <div class="card border-0">
                         <img src="./assets/1.jpg" class="w-100 h-50 rounded-3" alt="..." style="object-fit: cover; object-position: 50% 20%;" />
                             
                         <div class="card-body" dir=${(this.IsRTL === "true")? "rtl": "ltr"}>
@@ -53,7 +53,7 @@ export class HowItWorksCard extends LitElement {
                     </div>
                 </div>
                 <div slot="back"> 
-                    <div class="card border-2 border-primary">
+                    <div class="card border-0">
                         <img src="./assets/1.jpg" class="w-100 h-50 rounded-3" alt="..." style="object-fit: cover; object-position: 50% 20%;" />
                             
                         <div class="card-body" dir=${(this.IsRTL === "true")? "rtl": "ltr"}>
