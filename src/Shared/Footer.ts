@@ -1,87 +1,116 @@
 import { LitElement, html, css } from 'lit';
 
 export class Footer extends LitElement {
-
   static get styles() {
     return css
     `
-    :host {
-        font-family: Rubik, Arial, sans-serif;
-        font-weight: 400;
-        font-size: 1rem;
-        overflow-x: hidden;
-        color: #607289;
-    }
-    
-    h5 {
-        font-size: 1rem;
-        line-height: 1.375;
-        font-family: Rubik, Arial, sans-serif;
-        font-weight: 500;
-        color: #030929;
-    }
-    
-    a {
-        color: #818494;
-        font-weight: 500;
-        text-decoration: none;
-        background-color: transparent;
-    }
-    
-    a:hover {
-        color: #007bff;
-        text-decoration: none;
-    }
-    
-    footer {
-        background: #ebf4fa;
-    }
+
     `;
   }
 
   render() {
     return html
     `
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.css"
+      rel="stylesheet"
+    />
 
-    <footer class="border-top border-5 border-primary">
-        <div class="container pt-5 border-bottom">
-            <div class="row">
-                <div class="col-md-3 col-sm-6 col-6 mb-3 p-0 float-left">
-                    <h5 class="mb-4 font-weight-bold text-uppercase">Company</h5>
-                    <ul class="list-group">
-                        <li class="list-group-item bg-transparent border-0 p-0 mb-2">
-                            <a href="../about-naologic.html"></i>About</a>
-                        </li>
-                        <li class="list-group-item bg-transparent border-0 p-0 mb-2">
-                            <a href="https://blog.naologic.com"></i>Blog</a>
-                        </li>
-                    </ul>
-                </div>
+    <style> 
 
-                <div class="col-md-3 col-sm-6 col-6 mb-3 p-0 float-left">
-                    <h5 class="mb-4 font-weight-bold text-uppercase">Connect</h5>
-                    <ul class="list-group">
-                        <li class="list-group-item bg-transparent border-0 p-0 mb-2">
-                            <a href="https://www.facebook.com/naologic/" target="_blank"><i class="fa fa-facebook mr-1"></i> Facebook</a>
-                        </li>
-                        <li class="list-group-item bg-transparent border-0 p-0 mb-2">
-                            <a href="https://www.youtube.com/channel/UCtHmuf2oQLnksokfz8GIbKA" target="_blank"><i class="fa fa-youtube mr-1"></i> YouTube</a>
-                        </li>
-                    </ul>
-                </div>
 
-                <div class="col-md-12">
-                <div class="py-4 d-flex justify-content-center">
-                    <div class="d-flex flex-column bd-highlight mb-3">
-                        <div class="p-2 bd-highlight">CodeValley @ 2021</div>
-                    </div>    
-                    </div>
+    </style>
+    
+    <!-- Footer -->
+    <footer class="bg-primary text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4">
+    
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+    
+          <!-- Twitter -->
+          <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+    
+          <!-- Google -->
+          <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i class="fab fa-google"></i></a>
+    
+          <!-- Instagram -->
+          <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+    
+          <!-- Linkedin -->
+          <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+          <!-- Github -->
+          <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="#!" role="button"><i class="fab fa-github"></i></a>
+        </section>
+        <!-- Section: Social media -->
+    
+    
+        <!-- Section: Form -->
+        <section class="">
+          <form action="">
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center">
+              <!--Grid column-->
+              <div class="col-auto">
+                <p class="pt-2">
+                  <strong>Sign up for our newsletter</strong>
+                </p>
+              </div>
+              <!--Grid column-->
+    
+              <!--Grid column-->
+              <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div class="form-outline form-white mb-4">
+                  <input type="email" id="form5Example2" class="form-control" />
+                  <label class="form-label" for="form5Example2">Email address</label>
                 </div>
+              </div>
+              <!--Grid column-->
+    
+              <!--Grid column-->
+              <div class="col-auto">
+    
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-outline-light mb-4">
+                  Subscribe
+                </button>
+              </div>
+              <!--Grid column-->
             </div>
-        </div>
+            <!--Grid row-->
+          </form>
+        </section>
+        <!-- Section: Form -->
+    
+    
+    
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2020 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+    
     </footer>
-
+    <!-- Footer -->
     `;
   }
 }
