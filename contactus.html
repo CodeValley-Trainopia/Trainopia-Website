@@ -34,57 +34,188 @@
 
 <body>
     <navbar-comp></navbar-comp>
-    
+
     <br>
     <br>
-    <br>
-    <br>
-    
-    <div class="container border-bottom border-5 border-primary bg-light pt-4 px-4">
-        <form>
-            <!-- Name input -->
-            <div class="form-outline mb-4">
-              <input type="text" id="form4Example1" class="form-control" />
-              <label class="form-label" for="form4Example1">Name</label>
+
+    <div class="container my-5">
+        <div class="card border-0">
+            <div class="card-header border-5">
+                <div class="row">
+                    <div class="container d-flex align-items-center justify-content-center">
+                        <h1 class="fs-1 fw-bolder text-muted">Contact Us</h1>
+                    </div>
+                </div>
             </div>
-          
-            <!-- Email input -->
-            <div class="form-outline mb-4">
-              <input type="email" id="form4Example2" class="form-control" />
-              <label class="form-label" for="form4Example2">Email address</label>
+        </div>
+
+        <contact_form-comp></contact_form-comp>
+
+        <div class="card border-0">
+            <div class="card-header border-5">
+                <div class="row">
+                    <div class="container d-flex align-items-center justify-content-center">
+                        <h1 class="fs-1 fw-bolder text-muted">Talk to our Bot</h1>
+                    </div>
+                </div>
             </div>
-          
-            <!-- Message input -->
-            <div class="form-outline mb-4">
-              <textarea class="form-control" id="form4Example3" rows="4"></textarea>
-              <label class="form-label" for="form4Example3">Message</label>
+        </div>
+
+
+        <div class="card border-0">
+            <div class="card-header border-5">
+                <div class="row">
+                    <div class="container d-flex align-items-center justify-content-center">
+                        <h1 class="fs-1 fw-bolder text-muted">FAQ</h1>
+                    </div>
+                </div>
             </div>
-          
-            <!-- Checkbox -->
-            <div class="form-check d-flex justify-content-center mb-4">
-              <input
-                class="form-check-input me-2"
-                type="checkbox"
-                value=""
-                id="form4Example4"
-                checked
-              />
-              <label class="form-check-label" for="form4Example4">
-                Send me a copy of this message
-              </label>
+        </div>
+
+        <style>
+            .btn:focus {
+                box-shadow: none;
+            }
+        </style>
+
+        <div class="card border-0 bg-light my-4 p-5">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header card-header border-5 d-grid" id="headingOne">
+                        <button class="btn border-0 text-start" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Accordion Item #1
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                            collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header card-header border-5 d-grid" id="headingTwo">
+                        <button class="btn border-0 text-start collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Accordion Item #2
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until
+                            the collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header card-header border-5 d-grid" id="headingThree">
+                        <button class="btn border-0 text-start collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Accordion Item #3
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                            collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
             </div>
-          
-            <!-- Submit button -->
-            <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
-          </form>
+        </div>
+
+        <div class="card border-0 bg-light my-4 p-5">
+
+            <div class="container">
+                <p class="text-center mb-5">
+                    Find the answers for the most frequently asked questions below
+                </p>
+
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <h6 class="mb-3 text-primary"><i class="far fa-paper-plane text-primary pe-2"></i> A simple
+                            question?</h6>
+                        <p>
+                            <strong><u>Absolutely!</u></strong> We work with top payment companies which guarantees
+                            your
+                            safety and
+                            security. All billing information is stored on our payment processing partner.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <h6 class="mb-3 text-primary"><i class="fas fa-pen-alt text-primary pe-2"></i> A question
+                            that
+                            is longer then the previous one?</h6>
+                        <p>
+                            <strong><u>Yes, it is possible!</u></strong> You can cancel your subscription anytime in
+                            your
+                            account. Once the subscription is
+                            cancelled, you will not be charged next month.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <h6 class="mb-3 text-primary"><i class="fas fa-user text-primary pe-2"></i> A simple
+                            question?
+                        </h6>
+                        <p>
+                            Currently, we only offer monthly subscription. You can upgrade or cancel your monthly
+                            account at any time with no further obligation.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <h6 class="mb-3 text-primary"><i class="fas fa-rocket text-primary pe-2"></i> A simple
+                            question?
+                        </h6>
+                        <p>
+                            Yes. Go to the billing section of your dashboard and update your payment information.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <h6 class="mb-3 text-primary"><i class="fas fa-home text-primary pe-2"></i> A simple
+                            question?
+                        </h6>
+                        <p><strong><u>Unfortunately no</u>.</strong> We do not issue full or partial refunds for any
+                            reason.</p>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <h6 class="mb-3 text-primary"><i class="fas fa-book-open text-primary pe-2"></i> Another
+                            question that is longer than usual</h6>
+                        <p>
+                            Of course! We’re happy to offer a free plan to anyone who wants to try our service.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
-    <br>
-    <br>
 
+    <br>
+    <br>
 
     <footer-comp></footer-comp>
-
 
     <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
     <script>
