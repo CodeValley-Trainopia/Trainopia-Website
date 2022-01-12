@@ -36,13 +36,9 @@
             column-gap: 15px;
             padding: 15px;
             width: max-content;
-            background-color: #2195f380;
+            background-color: #2195f385;
         }
         
-        body {
-            
-
-        }
 
         #gallery img {
             background-color: rgba(255, 255, 255, 0);
@@ -66,9 +62,9 @@
             width: 250px;
         }
 
-        @media (max-width: 1200px) {
+        @media (max-width: 1400px) {
             #gallery {
-                grid-template-columns: max-content max-content max-content max-content;
+                grid-template-columns: max-content max-content max-content ;
             }
         }
 
@@ -3452,7 +3448,7 @@
         </div>
     </div>
 
-    <div class="container fixed-bottom">
+    <div class="container">
         <div class="container d-flex justify-content-end my-5">
             <button class="btn btn-primary border-0 bg-gradient rounded-pill" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
@@ -3489,6 +3485,29 @@
     <footer-comp>
 
     </footer-comp>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    
+    <script>
+        function addDarkmodeWidget() {
+            const options = {
+                bottom: '64px', // default: '32px'
+                right: 'unset', // default: '32px'
+                left: '32px', // default: 'unset'
+                time: '0.5s', // default: '0.3s'
+                mixColor: '#fff', // default: '#fff'
+                backgroundColor: '#fff',  // default: '#fff'
+                buttonColorDark: '#100f2c',  // default: '#100f2c'
+                buttonColorLight: '#fff', // default: '#fff'
+                saveInCookies: false, // default: true,
+                label: '🌓', // default: ''
+                autoMatchOsTheme: true // default: true
+            }
+
+            const darkmode = new Darkmode(options);
+            darkmode.showWidget()
+        }
+        window.addEventListener('load', addDarkmodeWidget);
+    </script>
 
     <script>
         var initPhotoSwipeFromDOM = function (gallerySelector) {
