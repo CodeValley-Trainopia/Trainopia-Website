@@ -19,7 +19,7 @@ export class Courses extends LitElement {
     static get styles() {
         return css
         `
-        
+
         `;
     }
 
@@ -27,8 +27,14 @@ export class Courses extends LitElement {
     return html
     `
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+    ul {
+        list-style-type:none;
+    }
+    </style>
+
     <div class="container">
-        <div class="card border-0">
+        <div class="border-0">
             <div class="card-header border-5">
                 <div class="row">
                     <div class="container d-flex align-items-center justify-content-center" dir=${(this.IsRTL === "true")? "rtl": "ltr"}>
@@ -43,9 +49,9 @@ export class Courses extends LitElement {
     </div>
     <br>
     <div class="container">
-        <ul class="list-group list-group-flush" dir=${(this.IsRTL === "true")? "rtl": "ltr"}>
+        <ul class="" dir=${(this.IsRTL === "true")? "rtl": "ltr"}>
 
-            <li class="list-group-item">
+            <li class="">
                 <course-comp color="primary" IsRTL=${this.IsRTL}
                 Title=${(this.IsRTL === "true")? LookUp.LookUpTable.course_1.title.ar: LookUp.LookUpTable.course_1.title.en}
                 Text=${(this.IsRTL === "true")? LookUp.LookUpTable.course_1.text.ar: LookUp.LookUpTable.course_1.text.en}
@@ -53,7 +59,7 @@ export class Courses extends LitElement {
                 ButtonRight_Text=${(this.IsRTL === "true")? LookUp.LookUpTable.course_1.buttonR.ar: LookUp.LookUpTable.course_1.buttonR.en}
                 ></course-comp>
             </li>
-            <li class="list-group-item">
+            <li class="">
                 <course-comp color="success" IsRTL=${this.IsRTL}
                 Title=${(this.IsRTL === "true")? LookUp.LookUpTable.course_2.title.ar: LookUp.LookUpTable.course_2.title.en}
                 Text=${(this.IsRTL === "true")? LookUp.LookUpTable.course_2.text.ar: LookUp.LookUpTable.course_2.text.en}
@@ -61,7 +67,7 @@ export class Courses extends LitElement {
                 ButtonRight_Text=${(this.IsRTL === "true")? LookUp.LookUpTable.course_2.buttonR.ar: LookUp.LookUpTable.course_2.buttonR.en}
                 ></course-comp>
             </li>
-            <li class="list-group-item">
+            <li class="">
                 <course-comp color="info" IsRTL=${this.IsRTL}
                 Title=${(this.IsRTL === "true")? LookUp.LookUpTable.course_3.title.ar: LookUp.LookUpTable.course_3.title.en}
                 Text=${(this.IsRTL === "true")? LookUp.LookUpTable.course_3.text.ar: LookUp.LookUpTable.course_3.text.en}
@@ -69,7 +75,7 @@ export class Courses extends LitElement {
                 ButtonRight_Text=${(this.IsRTL === "true")? LookUp.LookUpTable.course_3.buttonR.ar: LookUp.LookUpTable.course_3.buttonR.en}
                 ></course-comp>
             </li>
-            <li class="list-group-item">
+            <li class="">
             <course-comp color="warning" IsRTL=${this.IsRTL}
                 Title=${(this.IsRTL === "true")? LookUp.LookUpTable.course_4.title.ar: LookUp.LookUpTable.course_4.title.en}
                 Text=${(this.IsRTL === "true")? LookUp.LookUpTable.course_4.text.ar: LookUp.LookUpTable.course_4.text.en}

@@ -32,7 +32,7 @@ export class HowItWorks extends LitElement {
 
         <div class="container">
 
-                <div class="card border-0" dir=${(this.IsRTL === "true")? "rtl": "ltr"}>
+                <div class="border-0" dir=${(this.IsRTL === "true")? "rtl": "ltr"}>
                     <div class="card-header border-5">
                         <div class="row">
                             <div class="container d-flex align-items-center justify-content-center">

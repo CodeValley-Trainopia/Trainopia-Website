@@ -7,7 +7,7 @@ import { Navbar } from './Shared/Navbar.js';
 import { Testimonial } from './Home/testimonial.js';
 import { AppShell } from './AppShell.js';
 import { Index} from './Home/Index.js';
-import { FlipCard } from './Event/FlipCard.js';
+import { FlipCard } from './Home/FlipCard.js';
 import { Form } from './Contact/Form.js';
 
 customElements.define('app-shell', AppShell);

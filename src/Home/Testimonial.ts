@@ -39,7 +39,7 @@ export class Testimonial  extends LitElement {
 
     <div class="demo">
         <div class="container">
-            <div class="card border-0">
+            <div class="border-0">
                 <div class="card-header border-5">
                     <div class="row">
                         <div class="container d-flex align-items-center justify-content-center">
