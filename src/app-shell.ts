@@ -8,6 +8,7 @@ import { Testimonial } from './Home/testimonial.js';
 import { AppShell } from './AppShell.js';
 import { Index} from './Home/Index.js';
 import { FlipCard } from './Event/FlipCard.js';
+import { Form } from './Contact/Form.js';
 
 customElements.define('app-shell', AppShell);
 
@@ -19,7 +20,7 @@ customElements.define('navbar-comp', Navbar);
 customElements.define('footer-comp', Footer);
 customElements.define('testimonial-comp', Testimonial);
 
-
 customElements.define('event_jumbotron-comp', EventJumbotron);
 customElements.define('event_flipcard-comp', FlipCard);
 
+customElements.define('contact_form-comp', Form);
