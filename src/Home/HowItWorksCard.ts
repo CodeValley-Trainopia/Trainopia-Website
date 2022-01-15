@@ -42,19 +42,14 @@ export class HowItWorksCard extends LitElement {
             <div class="card-header border-5 mb-3" dir=${(this.IsRTL === "true")? "rtl": "ltr"}>${this.Header}</div>
 
             <event_flipcard-comp>
-                <div slot="front"> 
-                    <div class="border-0 text-primary">
-                        <img src="./assets/1.jpg" class="w-100 h-50 rounded-3" alt="..." style="object-fit: cover; object-position: 50% 20%;" />
-                            
-                        <div class="card-body" dir=${(this.IsRTL === "true")? "rtl": "ltr"}>
-                            <h5 class="card-text">${this.Title}</h5>
-                            <p class="card-text">${this.Text}</p>
-                        </div>
+                <div slot="front" class="border-5 border-bottom border-primary h-100 rounded-3"> 
+                    <div class="text-primary p-2">
+                        <img src="./assets/1.jpg" class="w-100 h-50 rounded-2" alt="..." style="object-fit: cover; object-position: 50% 20%;" />
+
                     </div>
                 </div>
-                <div slot="back"> 
-                    <div class="border-0 text-primary">
-                        <img src="./assets/1.jpg" class="w-100 h-50 rounded-3" alt="..." style="object-fit: cover; object-position: 50% 20%;" />
+                <div slot="back" class="border-5 border-bottom border-primary h-100 rounded-3">  
+                    <div class="text-primary">
                             
                         <div class="card-body" dir=${(this.IsRTL === "true")? "rtl": "ltr"}>
                             <h5 class="card-text">${this.Title}</h5>

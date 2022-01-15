@@ -18,6 +18,7 @@
 # build
 /_site/
 /dist/
+/dist-temp/
 /out-tsc/
 /assets/
 

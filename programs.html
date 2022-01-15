@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="Description" content="Put your description here.">
+    <base href="/">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <style>
+        html * {
+            font-family: 'Roboto Mono';
+        }
+    </style>
+
+    <link rel="icon" type="image/png" href="./assets/open-wc-logo.svg">
+
+    <title>Trainopia</title>
+</head>
+
+<body>
+    <navbar-comp></navbar-comp>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <style>
+        .btn-check:focus {
+            box-shadow: none;
+        }
+    </style>
+
+
+    <div class="container">
+        
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./assets/1.jpg" class="brightness" alt="..." style="width: 100%; height: 550px; object-fit: cover; object-position: 50% 20%;" />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="./assets/1.jpg" class="brightness" alt="..." style="width: 100%; height: 550px; object-fit: cover; object-position: 50% 20%;" />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/1.jpg" class="brightness" alt="..." style="width: 100%; height: 550px; object-fit: cover; object-position: 50% 20%;" />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+
+    <div class="_container">
+        <div class="container">
+            <div class="controls btn-group py-5" role="group">
+                <input type="radio" name="btnradio" class="btn-check control"
+                    data-filter="all" name="btnradio" checked id="btnradio1">
+                    <label class="btn btn-outline-dark" for="btnradio1">All</label>
+                <input type="radio" name="btnradio" class="btn-check control"
+                    data-filter=".green" id="btnradio2">
+                    <label class="btn btn-outline-success" for="btnradio2">Codevalley</label>
+                <input type="radio" name="btnradio" class="btn-check control"
+                    data-filter=".blue" id="btnradio3">
+                    <label class="btn btn-outline-primary" for="btnradio3">Multimedia</label>
+                <input type="radio" name="btnradio" class="btn-check control"
+                    data-filter=".red" id="btnradio4">
+                    <label class="btn btn-outline-danger" for="btnradio4">Markting</label>
+                <input type="radio" name="btnradio" class="btn-check control"
+                    data-filter=".yellow" id="btnradio5">
+                    <label class="btn btn-outline-warning" for="btnradio5">Kids</label>
+            </div>
+            <div class="row">
+
+                <div class="col-3 mix red">
+                    <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Header</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Primary card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the
+                                card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 mix green">
+                    <div class="card border-0 shadow-lg mb-3" style="max-width: 18rem;">
+                        <div class="card-header bg-success border-bottom border-5 border-dark">Header</div>
+                        <div class="card-body bg-white">
+                            <h5 class="card-title">Primary card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the
+                                card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 mix yellow">
+                    <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Header</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Primary card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the
+                                card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 mix blue">
+                    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Header</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Primary card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the
+                                card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 mix red">
+                    <div class="card border-0 shadow-lg mb-3" style="max-width: 18rem;">
+                        <div class="card-header bg-danger text-white border-bottom border-5 border-dark">Header</div>
+                        <div class="card-body bg-white">
+                            <h5 class="card-title">Primary card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the
+                                card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 mix green">
+                    <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Header</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Primary card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the
+                                card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 mix yellow">
+                    <div class="card border-0 shadow-lg mb-3" style="max-width: 18rem;">
+                        <div class="card-header bg-warning border-bottom border-5 border-dark">Header</div>
+                        <div class="card-body bg-white">
+                            <h5 class="card-title">Primary card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the
+                                card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 mix green">
+                    <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Header</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Primary card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the
+                                card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 mix yellow">
+                    <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Header</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Primary card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the
+                                card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 mix blue">
+                    <div class="card border-0 shadow-lg mb-3" style="max-width: 18rem;">
+                        <div class="card-header bg-primary text-white border-bottom border-5 border-dark">Header</div>
+                        <div class="card-body bg-white">
+                            <h5 class="card-title">Primary card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the
+                                card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <footer-comp></footer-comp>
+
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
+    <script src="./mixitup-v3/mixitup.min.js"></script>
+    <script>
+        var containerEl = document.querySelector('._container');
+
+        var mixer = mixitup(containerEl);
+    </script>
+
+
+    <script>
+        function addDarkmodeWidget() {
+            const options = {
+                bottom: '64px', // default: '32px'
+                right: 'unset', // default: '32px'
+                left: '32px', // default: 'unset'
+                time: '0.5s', // default: '0.3s'
+                mixColor: '#fff', // default: '#fff'
+                backgroundColor: '#fff',  // default: '#fff'
+                buttonColorDark: '#100f2c',  // default: '#100f2c'
+                buttonColorLight: '#fff', // default: '#fff'
+                saveInCookies: false, // default: true,
+                label: '🌓', // default: ''
+                autoMatchOsTheme: true // default: true
+            }
+
+            const darkmode = new Darkmode(options);
+            darkmode.showWidget()
+        }
+        window.addEventListener('load', addDarkmodeWidget);
+    </script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script type="module" src="./out-tsc/src/app-shell.js"></script>
+</body>
+
+</html>

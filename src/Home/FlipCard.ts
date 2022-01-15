@@ -35,7 +35,7 @@ export class FlipCard extends LitElement {
         }
         
         .FlipCard.is-flipped { 
-          background:initial;         
+          background:white;         
           transform: rotateY(180deg);
         }
         
@@ -49,11 +49,11 @@ export class FlipCard extends LitElement {
         }
         
         .FlipCard__face--front {
-          background:initial;
+          background:white;
         }
         
         .FlipCard__face--back {
-          background:initial;
+          background:white;
           transform: rotateY(180deg);
         }   
         </style>
