@@ -87,6 +87,9 @@ export class Navbar extends LitElement {
                         <li class="nav-item">
                             <a class="nav-link text-primary text-muted" href="contactus.html">${(this.IsRTL === "true")? LookUp.LookUpTable.menu_contact.ar: LookUp.LookUpTable.menu_contact.en}</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary text-muted" href="services.html">${(this.IsRTL === "true")? LookUp.LookUpTable.menu_services.ar: LookUp.LookUpTable.menu_services.en}</a>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-primary  text-muted" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             ${(this.IsRTL === "true")? LookUp.LookUpTable.menu_events.ar: LookUp.LookUpTable.menu_events.en}
