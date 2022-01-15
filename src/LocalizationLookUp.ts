@@ -12,6 +12,10 @@ export class LookUp {
             ar: "الصور",
             en: "Gallery"
         },
+        menu_services: {
+            ar: "خدماتنا",
+            en: "Services"
+        },
         menu_about: {
             ar: "من نحن",
             en: "About Us"
