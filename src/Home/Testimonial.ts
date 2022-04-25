@@ -1,33 +1,43 @@
 import { LitElement, html, css } from 'lit';
 import { TestimonialCard } from './TestimonialCard';
+import { LookUp } from '../LocalizationLookUp';
 
 customElements.define('testimonial-card', TestimonialCard);
 
 export class Testimonial  extends LitElement {
-  createRenderRoot() {
-    return this;
-  }
 
-  static get styles() {
-    return css`
-      .demo {
-          background: #ebf4fa; 
-      }
+    IsRTL: unknown;
+
+    static get properties() {
+        return {
+            IsRTL: { type: String }
+        };
+    }
     
-      .owl-theme .owl-controls{
-          margin-top: 20px;
-      }
-      .owl-theme .owl-controls .owl-page span{
-          background: #ccc;
-          opacity: 1;
-          transition: all 0.4s ease 0s;
-      }
-      .owl-theme .owl-controls .owl-page.active span,
-      .owl-theme .owl-controls.clickable .owl-page:hover span{
-          background: #ff4242;
-      }
-    `;
-  }
+    createRenderRoot() {
+        return this;
+    }
+
+    static get styles() {
+        return css`
+        .demo {
+            background: #ebf4fa; 
+        }
+        
+        .owl-theme .owl-controls{
+            margin-top: 20px;
+        }
+        .owl-theme .owl-controls .owl-page span{
+            background: #ccc;
+            opacity: 1;
+            transition: all 0.4s ease 0s;
+        }
+        .owl-theme .owl-controls .owl-page.active span,
+        .owl-theme .owl-controls.clickable .owl-page:hover span{
+            background: #ff4242;
+        }
+        `;
+    }
 
 
   render() {
@@ -43,7 +53,7 @@ export class Testimonial  extends LitElement {
                 <div class="card-header border-5">
                     <div class="row">
                         <div class="container d-flex align-items-center justify-content-center">
-                            <h1 class="fs-1 fw-bolder text-muted">Why Coding?</h1>
+                            <h1 class="fs-1 fw-bolder text-muted">${LookUp.LookUpTable.testimonials_title.ar}</h1>
                         </div>
                     </div>
                 </div>
@@ -54,13 +64,11 @@ export class Testimonial  extends LitElement {
             <div class="row">
                 <div class="col-md-12">
                     <div id="testimonial-slider" class="owl-carousel">
-
-                    <testimonial-card></testimonial-card> 
-                    <testimonial-card></testimonial-card> 
-                    <testimonial-card></testimonial-card> 
-                    <testimonial-card></testimonial-card> 
-                    <testimonial-card></testimonial-card> 
-                    <testimonial-card></testimonial-card> 
+                        ${LookUp.LookUpTable.testimonials.map(
+                            element => html`
+                            <testimonial-card T_name=${element.name} T_content=${element.content} T_job=${element.job}></testimonial-card>
+                            `
+                        )}
                     </div>
                 </div>
             </div>

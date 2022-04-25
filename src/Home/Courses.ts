@@ -38,7 +38,7 @@ export class Courses extends LitElement {
             <div class="card-header border-5">
                 <div class="row">
                     <div class="container d-flex align-items-center justify-content-center" dir=${(this.IsRTL === "true")? "rtl": "ltr"}>
-                        <h1 class="fs-1 fw-bolder text-muted">${(this.IsRTL === "true")? LookUp.LookUpTable.courses_title.ar: LookUp.LookUpTable.courses_title.en}</h1><span class="text-light">---</span>
+                        <h1 class="fs-1 fw-bolder text-muted">${(this.IsRTL === "true")? LookUp.LookUpTable.services_title.ar: LookUp.LookUpTable.services_title.en}</h1><span class="text-light">---</span>
                         <span class="material-icons fs-1 text-muted ">
                             school
                             </span>
@@ -50,39 +50,17 @@ export class Courses extends LitElement {
     <br>
     <div class="container">
         <ul class="" dir=${(this.IsRTL === "true")? "rtl": "ltr"}>
-
-            <li class="">
-                <course-comp color="primary" IsRTL=${this.IsRTL}
-                Title=${(this.IsRTL === "true")? LookUp.LookUpTable.course_1.title.ar: LookUp.LookUpTable.course_1.title.en}
-                Text=${(this.IsRTL === "true")? LookUp.LookUpTable.course_1.text.ar: LookUp.LookUpTable.course_1.text.en}
-                ButtonLeft_Text=${(this.IsRTL === "true")? LookUp.LookUpTable.course_1.buttonL.ar: LookUp.LookUpTable.course_1.buttonL.en}
-                ButtonRight_Text=${(this.IsRTL === "true")? LookUp.LookUpTable.course_1.buttonR.ar: LookUp.LookUpTable.course_1.buttonR.en}
-                ></course-comp>
-            </li>
-            <li class="">
-                <course-comp color="success" IsRTL=${this.IsRTL}
-                Title=${(this.IsRTL === "true")? LookUp.LookUpTable.course_2.title.ar: LookUp.LookUpTable.course_2.title.en}
-                Text=${(this.IsRTL === "true")? LookUp.LookUpTable.course_2.text.ar: LookUp.LookUpTable.course_2.text.en}
-                ButtonLeft_Text=${(this.IsRTL === "true")? LookUp.LookUpTable.course_2.buttonL.ar: LookUp.LookUpTable.course_2.buttonL.en}
-                ButtonRight_Text=${(this.IsRTL === "true")? LookUp.LookUpTable.course_2.buttonR.ar: LookUp.LookUpTable.course_2.buttonR.en}
-                ></course-comp>
-            </li>
-            <li class="">
-                <course-comp color="info" IsRTL=${this.IsRTL}
-                Title=${(this.IsRTL === "true")? LookUp.LookUpTable.course_3.title.ar: LookUp.LookUpTable.course_3.title.en}
-                Text=${(this.IsRTL === "true")? LookUp.LookUpTable.course_3.text.ar: LookUp.LookUpTable.course_3.text.en}
-                ButtonLeft_Text=${(this.IsRTL === "true")? LookUp.LookUpTable.course_3.buttonL.ar: LookUp.LookUpTable.course_3.buttonL.en}
-                ButtonRight_Text=${(this.IsRTL === "true")? LookUp.LookUpTable.course_3.buttonR.ar: LookUp.LookUpTable.course_3.buttonR.en}
-                ></course-comp>
-            </li>
-            <li class="">
-            <course-comp color="warning" IsRTL=${this.IsRTL}
-                Title=${(this.IsRTL === "true")? LookUp.LookUpTable.course_4.title.ar: LookUp.LookUpTable.course_4.title.en}
-                Text=${(this.IsRTL === "true")? LookUp.LookUpTable.course_4.text.ar: LookUp.LookUpTable.course_4.text.en}
-                ButtonLeft_Text=${(this.IsRTL === "true")? LookUp.LookUpTable.course_4.buttonL.ar: LookUp.LookUpTable.course_4.buttonL.en}
-                ButtonRight_Text=${(this.IsRTL === "true")? LookUp.LookUpTable.course_4.buttonR.ar: LookUp.LookUpTable.course_4.buttonR.en}
-                ></course-comp>
-        </li>
+            ${LookUp.LookUpTable.services.map(
+                element => html`
+                    <li class="">
+                        <course-comp color="${element.color}" IsRTL=${this.IsRTL}
+                        Title=${(this.IsRTL === "true")? element.title.ar: element.title.en}                        
+                        ButtonLeft_Text=${(this.IsRTL === "true")? element.buttonL.ar: element.buttonL.en}
+                        ButtonRight_Text=${(this.IsRTL === "true")? element.buttonR.ar: element.buttonR.en}
+                        ></course-comp>
+                    </li>
+                `
+            )}
         </ul>
     </div>
     `;

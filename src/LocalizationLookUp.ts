@@ -1,8 +1,45 @@
 export class LookUp {
     static LookUpTable = {
+        testimonials_title: {
+            ar: `قالوا عنا `,
+            en: `testimonials`
+        },
+        testimonials : [
+            {
+                name: `ولي أمر مازم ومحمد الهوال`,
+                content: `الشكر لن يوفي Trainopia  حقهم على كامب الأطفال، فعلاً أول أسبوع كان رائع، تنظيم ممتاز والتزام مع مدربين متخصصين وفاهمين وشاطرين، أسلوبهم سهل وسلس، والقيم والفقرات اللي اشتغلوا بيها فعلاً جميلة وقيمة وممتعة وبتبني شخصية الطفل وبتنمي مهاراته.  ألف شكر لكل فرد في ترينوبيا، لكم الشكر والتقدير`,
+                job: `ولي أمر`
+            },
+            {
+                name: `ولي أمر أسامة عبد العزيز`,
+                content: `أول مرة أشوف تدريب Online فعال بالصورة دي مع ابني وإنه ما يفقدش تركيزه وقت الفقرات من كثرة استم
+                تاعه بالمحتوى، شكرًا جدًا ليكم ولمجهودكم.`,
+                job: `ولي أمر`
+            },
+            {
+                name: `سمير بهائي`,
+                content: `فريق ترينوبيا، أنتم حققتم فعلاً نجاحًا كبيرًا، وأثبتم قدرتكم العالية على الالتزام والانضباط. أنتم بنيتم ثقة في عقول أولياء الأمور والأسر تنتظر من فريقكم الواعد المزيد من التقدم والنجاح.`,
+                job: `المدير الإقليمي لشركة Google في الشرق الأوسط`
+            },
+            {
+                name: `أحمد فوزي`,
+                content: `أنا فعلاً منبهر بالعقول الصغيرة اللي قدرت في السن دة تصمم مشاريع تكنولوجية رائعة. أنا كنت في العشرينيات من عمري لما قدمت أول منتج لي من خلال البرمجة. دة انجاز عظيم جدًا فعلاً.`,
+                job: `مؤسس ومدير ستوديو AN للألعاب الإلكترونية`
+            },
+            {
+                name: `م.عمرو محمد`,
+                content: `لما قررت أطلع رحلة مع فريق ترينوبيا، اعتقدت في الأول إن الرحلة للأطفال، وأنا هكون مجرد مصاحب لأولادي في تدريبهم. ولكني انبهرت برحلة "يلا كامب" وإنها ممتازة لكل الفئات العمرية، أنا وزوجتي وأولادي ولو والدي قرر يطلع رحلة أكيد هرشح له فريق ترينوبيا`,
+                job: `مهندس مدني`
+            },
+            {
+                name: `ولي أمر أحد المتدربين`,
+                content: `أنا بفضل أجيب ابني فعلاً يتدرب ويتعلم منكم أكتر من أي مكان تاني`,
+                job: `ولي أمر`
+            },
+        ],
         menu_title: {
-            ar: "ترانوبيا",
-            en: "Trainopia"
+            ar: `ترينوبيا`,
+            en: `Trainopia`
         },
         menu_home: {
             ar: "الرئيسية",
@@ -25,136 +62,162 @@ export class LookUp {
             en: "Contact Us"
         },
         menu_events: {
-            ar: "فعاليات",
-            en: "Events"
+            ar: "الفعاليات القادمة",
+            en: "Upcomming Events"
         },
         jumbotron_title: {
-            ar: "مرحبا في ترينوبيا",
+            ar: "مرحبا بكم في ترينوبيا",
             en: "Welcome To Trainopia"
         },
         jumbotron_text: {
-            ar: "ترينوبيا جزيرة التغير",
-            en: "The Island Of Change"
+            ar: `نقاط نور`,
+            en: ""
         },
         jumbotron_button: {
-            ar: "اعرف اكثر",
+            ar: "اعرف أكثر",
             en: "See More!"
         },
-        howitworks_title: {
-            ar: "كيف يتعلم الطلاب",
-            en: "How It Works"
+        events_title: {
+            ar: `اهم الفعاليات القادمة`,
+            en: "Upcomming Events!"
         },
-        howitworks_card_header_1: {
-            ar: "اعرف اكثر",
-            en: "howitworks_card_header_1"
-        },
-        howitworks_card_title_1: {
-            ar: "اعرف اكثر",
-            en: "howitworks_card_title_1"
-        },
-        howitworks_card_text_1: {
-            ar: "اعرف اكثر",
-            en: "howitworks_card_text_1"
-        },
-        howitworks_card_header_2: {
-            ar: "اعرف اكثر",
-            en: "howitworks_card_header_2"
-        },
-        howitworks_card_title_2: {
-            ar: "اعرف اكثر",
-            en: "howitworks_card_title_2"
-        },
-        howitworks_card_text_2: {
-            ar: "اعرف اكثر",
-            en: "howitworks_card_text_3"
-        },
-        howitworks_card_header_3: {
-            ar: "اعرف اكثر",
-            en: "howitworks_card_header_3"
-        },
-        howitworks_card_title_3: {
-            ar: "اعرف اكثر",
-            en: "howitworks_card_title_3"
-        },
-        howitworks_card_text_3: {
-            ar: "اعرف اكثر",
-            en: "howitworks_card_text_3"
-        },
-        courses_title: {
-            ar: "برامجنا التعليمية",
-            en: "Our Courses"
-        },
-        course_1: {
-            title: {
-                ar: "برامجنا التعليمية",
-                en: "Our Courses"
+        events : [
+            {
+                event_card_header: {
+                    ar: `Champions 11`,
+                    en: `Champions 11`
+                },
+                event_card_title: {
+                    ar: "اعرف اكثر",
+                    en: "howitworks_card_title_1"
+                },
+                event_card_text: {
+                    ar: "Trainopia Trips - Magic Planet",
+                    en: "howitworks_card_text_1"
+                }
             },
-            text: {
-                ar: "برامجنا التعليمية",
-                en: "Our Courses"
+            {
+                event_card_header: {
+                    ar: `Trainopia Trips - Magic Planet`,
+                    en: `Trainopia Trips - Magic Planet`
+                },
+                event_card_title: {
+                    ar: "اعرف اكثر",
+                    en: "howitworks_card_title_2"
+                },
+                event_card_text: {
+                    ar: "اعرف اكثر",
+                    en: "howitworks_card_text_3"
+                },
             },
-            buttonL: {
-                ar: "برامجنا التعليمية",
-                en: "Our Courses"
+            {
+                event_card_header: {
+                    ar: `Game Development Track 5`,
+                    en: `Game Development Track 5`
+                },
+                event_card_title: {
+                    ar: "اعرف اكثر",
+                    en: "howitworks_card_title_3"
+                },
+                event_card_text: {
+                    ar: "اعرف اكثر",
+                    en: "howitworks_card_text_3"
+                },
             },
-            buttonR: {
-                ar: "برامجنا التعليمية",
-                en: "Our Courses"
+            {
+                event_card_header: {
+                    ar: `Media Track 2`,
+                    en: `Media Track 2`
+                },
+                event_card_title: {
+                    ar: "اعرف اكثر",
+                    en: "howitworks_card_title_3"
+                },
+                event_card_text: {
+                    ar: "اعرف اكثر",
+                    en: "howitworks_card_text_3"
+                },
+            },
+            {
+                event_card_header: {
+                    ar: `Robotics Track 1`,
+                    en: `Robotics Track 1`
+                },
+                event_card_title: {
+                    ar: "اعرف اكثر",
+                    en: "howitworks_card_title_3"
+                },
+                event_card_text: {
+                    ar: "اعرف اكثر",
+                    en: "howitworks_card_text_3"
+                },
             }
+        ],
+        services_title: {
+            ar: "خدماتنا",
+            en: "Our Services"
         },
-        course_2: {
-            title: {
-                ar: "برامجنا التعليمية",
-                en: "Our Courses"
+        services: [
+            {
+                title: {
+                    ar: `ترينوبيا للأطفال و المراهقين`,
+                    en: ""
+                },
+                buttonL: {
+                    ar: `الحدث القادم`,
+                    en: `Next Event`
+                },
+                buttonR: {
+                    ar: `اعرف أكثر`,
+                    en: `Know More!`
+                },
+                color: 'warning'
             },
-            text: {
-                ar: "برامجنا التعليمية",
-                en: "Our Courses"
+            {
+                title: {
+                    ar: "كود فالي",
+                    en: "Code Valley"
+                },
+                buttonL: {
+                    ar: `الحدث القادم`,
+                    en: `Next Event`
+                },
+                buttonR: {
+                    ar: `اعرف أكثر`,
+                    en: `Know More!`
+                },
+                color: "success"
+            },        
+            {
+                title: {
+                    ar: `رحلاتنا`,
+                    en: "Trips"
+                },
+                buttonL: {
+                    ar: `الحدث القادم`,
+                    en: `Next Event`
+                },
+                buttonR: {
+                    ar: `اعرف أكثر`,
+                    en: `Know More!`
+                },
+                color: "info"
             },
-            buttonL: {
-                ar: "برامجنا التعليمية",
-                en: "Our Courses"
-            },
-            buttonR: {
-                ar: "برامجنا التعليمية",
-                en: "Our Courses"
+            {
+                title: {
+                    ar: `الورش الفنية`,
+                    en: ""
+                },
+                buttonL: {
+                    ar: `الحدث القادم`,
+                    en: `Next Event`
+                },
+                buttonR: {
+                    ar: `اعرف أكثر`,
+                    en: `Know More!`
+                },
+                color: "primary"
             }
-        },        
-        course_3: {
-            title: {
-                ar: "برامجنا التعليمية",
-                en: "Our Courses"
-            },
-            text: {
-                ar: "برامجنا التعليمية",
-                en: "Our Courses"
-            },
-            buttonL: {
-                ar: "برامجنا التعليمية",
-                en: "Our Courses"
-            },
-            buttonR: {
-                ar: "برامجنا التعليمية",
-                en: "Our Courses"
-            }
-        },
-        course_4: {
-            title: {
-                ar: "برامجنا التعليمية",
-                en: "Our Courses"
-            },
-            text: {
-                ar: "برامجنا التعليمية",
-                en: "Our Courses"
-            },
-            buttonL: {
-                ar: "برامجنا التعليمية",
-                en: "Our Courses"
-            },
-            buttonR: {
-                ar: "برامجنا التعليمية",
-                en: "Our Courses"
-            }
-        }
+        ]
     }
 }

@@ -5,7 +5,6 @@ export class Course extends LitElement {
     IsRTL: unknown;
     Color: unknown;
     Title: unknown;
-    Text: unknown;
     ButtonRight_Text: unknown;
     ButtonLeft_Text: unknown;
 
@@ -14,7 +13,6 @@ export class Course extends LitElement {
             Color: { type: String },
             IsRTL: { type: String },
             Title: { type: String },
-            Text: { type: String },
             ButtonRight_Text: { type: String },
             ButtonLeft_Text: { type: String }
         };
@@ -38,7 +36,6 @@ export class Course extends LitElement {
                 <div class="col-md-6 col-sm-12">
                     <div class="card-body border-5"  dir=${(this.IsRTL === "true")? "rtl": "ltr"}>
                         <h5 class="card-title fw-thin display-1 text-${this.Color}">${this.Title}</h5>
-                        <p class="card-text">${this.Text}</p>
                         <div class="row g-4">
                             <div class="col-lg-6">
                                 <button type="button" class="btn btn-${this.Color} shadow w-100">${this.ButtonLeft_Text}</button>
