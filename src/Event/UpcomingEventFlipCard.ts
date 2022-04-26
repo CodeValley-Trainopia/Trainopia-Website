@@ -1,7 +1,7 @@
 import { LitElement, html, css } from 'lit';
 import { property } from 'lit-element';
 
-export class FlipCard extends LitElement {
+export class UpcomingEventFlipCard extends LitElement {
     
     @property({type: String}) IsRTL: any;
 

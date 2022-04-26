@@ -1,5 +1,5 @@
 import { LitElement, html, css } from 'lit';
-import { LookUp } from '../LocalizationLookUp';
+import { Data } from '../Data';
 import { property } from 'lit-element';
 
 export class Navbar extends LitElement {
@@ -68,7 +68,7 @@ export class Navbar extends LitElement {
                 
                 <span class="material-icons fs-1 text-muted" >
                public
-                </span> <a class="navbar-brand  text-primary" href="#">${(this.IsRTL === "true")? LookUp.LookUpTable.menu_title.ar: LookUp.LookUpTable.menu_title.en}</a>
+                </span> <a class="navbar-brand  text-primary" href="#">${(this.IsRTL === "true")? Data.Localization.menu_title.ar: Data.Localization.menu_title.en}</a>
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -77,23 +77,23 @@ export class Navbar extends LitElement {
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" href="./index.html">${(this.IsRTL === "true")? LookUp.LookUpTable.menu_home.ar: LookUp.LookUpTable.menu_home.en}</a>
+                            <a class="nav-link active" href="./index.html">${(this.IsRTL === "true")? Data.Localization.menu_home.ar: Data.Localization.menu_home.en}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-primary text-muted" href="./gallery.html">${(this.IsRTL === "true")? LookUp.LookUpTable.menu_gallery.ar: LookUp.LookUpTable.menu_gallery.en}</a>
+                            <a class="nav-link text-primary text-muted" href="./gallery.html">${(this.IsRTL === "true")? Data.Localization.menu_gallery.ar: Data.Localization.menu_gallery.en}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-primary text-muted" href="aboutus.html">${(this.IsRTL === "true")? LookUp.LookUpTable.menu_about.ar: LookUp.LookUpTable.menu_about.en}</a>
+                            <a class="nav-link text-primary text-muted" href="aboutus.html">${(this.IsRTL === "true")? Data.Localization.menu_about.ar: Data.Localization.menu_about.en}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-primary text-muted" href="contactus.html">${(this.IsRTL === "true")? LookUp.LookUpTable.menu_contact.ar: LookUp.LookUpTable.menu_contact.en}</a>
+                            <a class="nav-link text-primary text-muted" href="contactus.html">${(this.IsRTL === "true")? Data.Localization.menu_contact.ar: Data.Localization.menu_contact.en}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-primary text-muted" href="services.html">${(this.IsRTL === "true")? LookUp.LookUpTable.menu_services.ar: LookUp.LookUpTable.menu_services.en}</a>
+                            <a class="nav-link text-primary text-muted" href="services.html">${(this.IsRTL === "true")? Data.Localization.menu_services.ar: Data.Localization.menu_services.en}</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-primary  text-muted" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            ${(this.IsRTL === "true")? LookUp.LookUpTable.menu_events.ar: LookUp.LookUpTable.menu_events.en}
+                            ${(this.IsRTL === "true")? Data.Localization.menu_events.ar: Data.Localization.menu_events.en}
                             </a>
                             <ul class="dropdown-menu"  aria-labelledby="navbarDropdownMenuLink">                                
                                 <li><a class="dropdown-item fs-6 fw-bold text-primary text-muted" href="./events.html">Event-1</a></li>

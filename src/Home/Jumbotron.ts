@@ -1,5 +1,5 @@
 import { LitElement, html, css } from 'lit';
-import { LookUp } from '../LocalizationLookUp';
+import { Data } from '../Data';
 import { property } from 'lit-element';
 
 export class Jumbotron extends LitElement {
@@ -89,9 +89,9 @@ export class Jumbotron extends LitElement {
                     </div>
                     <div class="col-sm-12 col-md-5">
                         <div class="container-fluid text-wrap text-light py-5">
-                            <p class="display-5 fw-bold">${(this.IsRTL === "true")? LookUp.LookUpTable.jumbotron_title.ar: LookUp.LookUpTable.jumbotron_title.en}</p>
-                            <p class="fs-4 fw-normal">${(this.IsRTL === "true")? LookUp.LookUpTable.jumbotron_text.ar: LookUp.LookUpTable.jumbotron_text.en}</p>
-                            <button class="btn btn-outline-primary btn-lg fs-3 fw-bolder border-3" type="button">${(this.IsRTL === "true")? LookUp.LookUpTable.jumbotron_button.ar: LookUp.LookUpTable.jumbotron_button.en}</button>
+                            <p class="display-5 fw-bold">${(this.IsRTL === "true")? Data.Localization.jumbotron_title.ar: Data.Localization.jumbotron_title.en}</p>
+                            <p class="fs-4 fw-normal">${(this.IsRTL === "true")? Data.Localization.jumbotron_text.ar: Data.Localization.jumbotron_text.en}</p>
+                            <button class="btn btn-outline-primary btn-lg fs-3 fw-bolder border-3" type="button">${(this.IsRTL === "true")? Data.Localization.jumbotron_button.ar: Data.Localization.jumbotron_button.en}</button>
                         </div>
                     </div>
                 </div>

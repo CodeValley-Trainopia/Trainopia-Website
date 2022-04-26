@@ -1,6 +1,6 @@
 import { LitElement, html, css } from 'lit';
 import { TestimonialCard } from './TestimonialCard';
-import { LookUp } from '../LocalizationLookUp';
+import { Data } from '../Data';
 
 customElements.define('testimonial-card', TestimonialCard);
 
@@ -53,7 +53,7 @@ export class Testimonial  extends LitElement {
                 <div class="card-header border-5">
                     <div class="row">
                         <div class="container d-flex align-items-center justify-content-center">
-                            <h1 class="fs-1 fw-bolder text-muted">${LookUp.LookUpTable.testimonials_title.ar}</h1>
+                            <h1 class="fs-1 fw-bolder text-muted">${Data.Localization.testimonials_title.ar}</h1>
                         </div>
                     </div>
                 </div>
@@ -64,7 +64,7 @@ export class Testimonial  extends LitElement {
             <div class="row">
                 <div class="col-md-12">
                     <div id="testimonial-slider" class="owl-carousel">
-                        ${LookUp.LookUpTable.testimonials.map(
+                        ${Data.Localization.testimonials.map(
                             element => html`
                             <testimonial-card T_name=${element.name} T_content=${element.content} T_job=${element.job}></testimonial-card>
                             `

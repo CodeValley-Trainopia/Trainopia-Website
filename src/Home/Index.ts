@@ -42,7 +42,7 @@ export class Index extends LitElement {
     
         <br>
     
-        <howitworks-comp IsRTL=${this.IsRTL}></howitworks-comp>
+        <upcoming_events-comp IsRTL=${this.IsRTL}></upcoming_events-comp>
     
         <br>
     

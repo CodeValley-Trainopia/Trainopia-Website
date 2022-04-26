@@ -1,5 +1,5 @@
-export class LookUp {
-    static LookUpTable = {
+export class Data {
+    static Localization = {
         testimonials_title: {
             ar: `قالوا عنا `,
             en: `testimonials`
@@ -77,77 +77,77 @@ export class LookUp {
             ar: "اعرف أكثر",
             en: "See More!"
         },
-        events_title: {
+        upcoming_events_title: {
             ar: `اهم الفعاليات القادمة`,
             en: "Upcomming Events!"
         },
-        events : [
+        upcoming_events : [
             {
-                event_card_header: {
+                header: {
                     ar: `Champions 11`,
                     en: `Champions 11`
                 },
-                event_card_title: {
+                title: {
                     ar: "اعرف اكثر",
                     en: "howitworks_card_title_1"
                 },
-                event_card_text: {
+                text: {
                     ar: "Trainopia Trips - Magic Planet",
                     en: "howitworks_card_text_1"
                 }
             },
             {
-                event_card_header: {
+                header: {
                     ar: `Trainopia Trips - Magic Planet`,
                     en: `Trainopia Trips - Magic Planet`
                 },
-                event_card_title: {
+                title: {
                     ar: "اعرف اكثر",
                     en: "howitworks_card_title_2"
                 },
-                event_card_text: {
+                text: {
                     ar: "اعرف اكثر",
                     en: "howitworks_card_text_3"
                 },
             },
             {
-                event_card_header: {
+                header: {
                     ar: `Game Development Track 5`,
                     en: `Game Development Track 5`
                 },
-                event_card_title: {
+                title: {
                     ar: "اعرف اكثر",
                     en: "howitworks_card_title_3"
                 },
-                event_card_text: {
+                text: {
                     ar: "اعرف اكثر",
                     en: "howitworks_card_text_3"
                 },
             },
             {
-                event_card_header: {
+                header: {
                     ar: `Media Track 2`,
                     en: `Media Track 2`
                 },
-                event_card_title: {
+                title: {
                     ar: "اعرف اكثر",
                     en: "howitworks_card_title_3"
                 },
-                event_card_text: {
+                text: {
                     ar: "اعرف اكثر",
                     en: "howitworks_card_text_3"
                 },
             },
             {
-                event_card_header: {
+                header: {
                     ar: `Robotics Track 1`,
                     en: `Robotics Track 1`
                 },
-                event_card_title: {
+                title: {
                     ar: "اعرف اكثر",
                     en: "howitworks_card_title_3"
                 },
-                event_card_text: {
+                text: {
                     ar: "اعرف اكثر",
                     en: "howitworks_card_text_3"
                 },

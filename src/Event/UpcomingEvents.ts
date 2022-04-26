@@ -1,10 +1,8 @@
 import { LitElement, html, css } from 'lit';
-import { HowItWorksCard } from './HowItWorksCard';
-import { LookUp } from '../LocalizationLookUp';
+import { Data } from '../Data';
 
-customElements.define('howitworkscard-comp', HowItWorksCard);
 
-export class HowItWorks extends LitElement {
+export class UpcomingEvents extends LitElement {
     IsRTL: unknown;
 
     static get properties() {
@@ -28,7 +26,7 @@ export class HowItWorks extends LitElement {
         return html
         `
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        
+        <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
         <div class="container">
 
@@ -36,7 +34,11 @@ export class HowItWorks extends LitElement {
                     <div class="card-header border-5">
                         <div class="row">
                             <div class="container d-flex align-items-center justify-content-center">
-                                <h1 class="fs-1 fw-bolder text-muted">${(this.IsRTL === "true")? LookUp.LookUpTable.events_title.ar: LookUp.LookUpTable.events_title.en}</h1>
+                                <h1 class="fs-1 fw-bolder text-muted">${(this.IsRTL === "true")? Data.Localization.upcoming_events_title.ar: Data.Localization.upcoming_events_title.en} 
+                                    <span class="material-symbols-outlined fs-1 text-muted">
+                                        event
+                                    </span>
+                                </h1>
                             </div>
                         </div>
                     </div>
@@ -44,14 +46,14 @@ export class HowItWorks extends LitElement {
             
             <br>
             <div class="row">
-                ${LookUp.LookUpTable.events.map(
+                ${Data.Localization.upcoming_events.map(
                     element => html`
                     <div class="col-lg-3 col-md-4 col-sm-12 d-flex align-items-center justify-content-center">
-                        <howitworkscard-comp IsRTL=${(this.IsRTL === "true")? "true": "false"} 
-                        Header=${(this.IsRTL === "true")? element.event_card_header.ar: element.event_card_header.en}
-                        Title=${(this.IsRTL === "true")? element.event_card_title.ar: element.event_card_title.en}
-                        Text=${(this.IsRTL === "true")? element.event_card_text.ar: element.event_card_text.en}
-                        ></howitworkscard-comp>
+                        <upcoming_event_card-comp IsRTL=${(this.IsRTL === "true")? "true": "false"} 
+                        Header=${(this.IsRTL === "true")? element.header.ar: element.header.en}
+                        Title=${(this.IsRTL === "true")? element.title.ar: element.title.en}
+                        Text=${(this.IsRTL === "true")? element.text.ar: element.text.en}
+                        ></upcoming_event_card-comp>
                     </div>                    
                     `
                 )}            

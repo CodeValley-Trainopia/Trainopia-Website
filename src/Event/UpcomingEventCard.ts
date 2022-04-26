@@ -1,7 +1,6 @@
 import { LitElement, html, css } from 'lit';
-import { LookUp } from '../LocalizationLookUp';
 
-export class HowItWorksCard extends LitElement {
+export class UpcomingEventCard extends LitElement {
     IsRTL: unknown;
     Header: unknown;
     Title: unknown;
