@@ -10,7 +10,7 @@ export class TestimonialCard  extends LitElement {
     static get properties() {
         return {
             T_content: { type: String },
-            T_title: { type: String },
+            T_name: { type: String },
             T_job: { type: String },
         };
     }
@@ -93,17 +93,19 @@ export class TestimonialCard  extends LitElement {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />    
-    <div class="testimonial">
+    <div class="testimonial" dir="rtl">
         <div class="testimonial-content">
             <div class="testimonial-icon">
                 <i class="fa fa-quote-left"></i>
             </div>
-            <p class="description" dir="rtl">
+            <p class="description" >
                 ${this.T_content}
             </p>
         </div>
-        <h3 class="title" dir="rtl">${this.T_name}</h3>
-        <span class="post" dir="rtl">${this.T_job}</span
+        <div>
+            <h3 class="title">${this.T_name}</h3>
+            <span class="post">${this.T_job}</span
+        </div>
     </div>
     `;
   }

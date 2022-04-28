@@ -38,10 +38,13 @@ export class Courses extends LitElement {
             <div class="card-header border-5">
                 <div class="row">
                     <div class="container d-flex align-items-center justify-content-center" dir=${(this.IsRTL === "true")? "rtl": "ltr"}>
-                        <h1 class="fs-1 fw-bolder text-muted">${(this.IsRTL === "true")? Data.Localization.services_title.ar: Data.Localization.services_title.en}</h1><span class="text-light">---</span>
-                        <span class="material-icons fs-1 text-muted ">
+                        <h1 class="fs-1 fw-bolder text-muted">
+                            ${(this.IsRTL === "true")? Data.Localization.services_title.ar: Data.Localization.services_title.en}
+                        </h1>
+                        <span class="text-light">---</span>
+                        <span class="material-icons fs-1 text-primary ">
                             school
-                            </span>
+                        </span>
                     </div>
                 </div>
             </div>

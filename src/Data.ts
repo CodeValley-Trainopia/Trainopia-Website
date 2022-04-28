@@ -1,5 +1,45 @@
 export class Data {
     static Localization = {
+        menu_title: {
+            ar: `ترينوبيا`,
+            en: `Trainopia`
+        },
+        menu_home: {
+            ar: `الرئيسية`,
+            en: `Home`
+        },
+        menu_gallery: {
+            ar: `الصور`,
+            en: `Gallery`
+        },
+        menu_services: {
+            ar: `خدماتنا`,
+            en: `Services`
+        },
+        menu_about: {
+            ar: `من نحن`,
+            en: `About Us`
+        },
+        menu_contact: {
+            ar: `تواصل معنا`,
+            en: `Contact Us`
+        },
+        menu_events: {
+            ar: `الفعاليات القادمة`,
+            en: `Upcomming Events`
+        },
+        jumbotron_title: {
+            ar: `مرحبا بكم في ترينوبيا`,
+            en: `Welcome To Trainopia`
+        },
+        jumbotron_text: {
+            ar: `نقاط نور`,
+            en: ``
+        },
+        jumbotron_button: {
+            ar: `اعرف أكثر`,
+            en: `See More!`
+        },
         testimonials_title: {
             ar: `قالوا عنا `,
             en: `testimonials`
@@ -28,7 +68,7 @@ export class Data {
             },
             {
                 name: `م.عمرو محمد`,
-                content: `لما قررت أطلع رحلة مع فريق ترينوبيا، اعتقدت في الأول إن الرحلة للأطفال، وأنا هكون مجرد مصاحب لأولادي في تدريبهم. ولكني انبهرت برحلة "يلا كامب" وإنها ممتازة لكل الفئات العمرية، أنا وزوجتي وأولادي ولو والدي قرر يطلع رحلة أكيد هرشح له فريق ترينوبيا`,
+                content: `لما قررت أطلع رحلة مع فريق ترينوبيا، اعتقدت في الأول إن الرحلة للأطفال، وأنا هكون مجرد مصاحب لأولادي في تدريبهم. ولكني انبهرت برحلة 'يلا كامب' وإنها ممتازة لكل الفئات العمرية، أنا وزوجتي وأولادي ولو والدي قرر يطلع رحلة أكيد هرشح له فريق ترينوبيا`,
                 job: `مهندس مدني`
             },
             {
@@ -37,49 +77,9 @@ export class Data {
                 job: `ولي أمر`
             },
         ],
-        menu_title: {
-            ar: `ترينوبيا`,
-            en: `Trainopia`
-        },
-        menu_home: {
-            ar: "الرئيسية",
-            en: "Home"
-        },
-        menu_gallery: {
-            ar: "الصور",
-            en: "Gallery"
-        },
-        menu_services: {
-            ar: "خدماتنا",
-            en: "Services"
-        },
-        menu_about: {
-            ar: "من نحن",
-            en: "About Us"
-        },
-        menu_contact: {
-            ar: "تواصل معنا",
-            en: "Contact Us"
-        },
-        menu_events: {
-            ar: "الفعاليات القادمة",
-            en: "Upcomming Events"
-        },
-        jumbotron_title: {
-            ar: "مرحبا بكم في ترينوبيا",
-            en: "Welcome To Trainopia"
-        },
-        jumbotron_text: {
-            ar: `نقاط نور`,
-            en: ""
-        },
-        jumbotron_button: {
-            ar: "اعرف أكثر",
-            en: "See More!"
-        },
         upcoming_events_title: {
             ar: `اهم الفعاليات القادمة`,
-            en: "Upcomming Events!"
+            en: `Upcomming Events!`
         },
         upcoming_events : [
             {
@@ -88,12 +88,12 @@ export class Data {
                     en: `Champions 11`
                 },
                 title: {
-                    ar: "اعرف اكثر",
-                    en: "howitworks_card_title_1"
+                    ar: `اعرف اكثر`,
+                    en: `howitworks_card_title_1`
                 },
                 text: {
-                    ar: "Trainopia Trips - Magic Planet",
-                    en: "howitworks_card_text_1"
+                    ar: `هو مخيم تدريبي للأطفال والمراهقين من سن 7 سنوات وحتى 14 سنة، يكون مكون من مجموعة من الأنشطة ومسابقات التحدي والمغامرة والمتعة، ويتم تقسييم المشاركين إلى فرق بحيث يعمل كل فريق للفوز في مجموعة الألعاب والمسابقات التي يخوضها فريقه، ويتم حساب نقاط كل فريق بحسب القيم التي حققها أفراده. يكون المخيم التدريبي في أحد الأماكن القريبة في القاهرة.`,
+                    en: `howitworks_card_text_1`
                 }
             },
             {
@@ -102,12 +102,12 @@ export class Data {
                     en: `Trainopia Trips - Magic Planet`
                 },
                 title: {
-                    ar: "اعرف اكثر",
-                    en: "howitworks_card_title_2"
+                    ar: `اعرف اكثر`,
+                    en: `howitworks_card_title_2`
                 },
                 text: {
-                    ar: "اعرف اكثر",
-                    en: "howitworks_card_text_3"
+                    ar: `هي رحلة إلى عالم ماجيك بلانيت في مدينة السادس من أكتوبر، يستمتع فيها الأطفال من سن 5 سنوات بألعاب الفيديو وألعاب الركوب في مناخ من المغامرة والتحدي والأوقات الممتعة.`,
+                    en: `howitworks_card_text_3`
                 },
             },
             {
@@ -116,12 +116,12 @@ export class Data {
                     en: `Game Development Track 5`
                 },
                 title: {
-                    ar: "اعرف اكثر",
-                    en: "howitworks_card_title_3"
+                    ar: `اعرف اكثر`,
+                    en: `howitworks_card_title_3`
                 },
                 text: {
-                    ar: "اعرف اكثر",
-                    en: "howitworks_card_text_3"
+                    ar: `هو برنامج تعليم البرمجة المطول في موسمه الخامس 2022، يهتم بتعلم الأطفال من سن 10 سنوات إلى 16 سنة كيفية تصميم الألعاب الإلكترونية واستخدام تكنولوجيا VR، ويستمر طوال فترة صيف 2022 سواء Online أو في أحد أماكن التدريب في القاهرة. وينتهي بواحدة من أكبر مسابقات البرمجة في الوطن العربي بين الفرق المشاركة.`,
+                    en: `howitworks_card_text_3`
                 },
             },
             {
@@ -130,12 +130,12 @@ export class Data {
                     en: `Media Track 2`
                 },
                 title: {
-                    ar: "اعرف اكثر",
-                    en: "howitworks_card_title_3"
+                    ar: `اعرف اكثر`,
+                    en: `howitworks_card_title_3`
                 },
                 text: {
-                    ar: "اعرف اكثر",
-                    en: "howitworks_card_text_3"
+                    ar: `هو الموسم الثاني من برنامج مهارات الميديا، ويعتمد على تعليم الأطفال من سن 10 سنوات إلى 16 سنة مهارات التصميم وتحرير الصور باستخدام برامج Photoshop وIllustrator، كما يهتم بتعليم الأولاد والبنات في هذا العمر مهارات التصوير المحترف ومهارات صناعة ةالفيديو وتعديله وتحريره.`,
+                    en: `howitworks_card_text_3`
                 },
             },
             {
@@ -144,24 +144,38 @@ export class Data {
                     en: `Robotics Track 1`
                 },
                 title: {
-                    ar: "اعرف اكثر",
-                    en: "howitworks_card_title_3"
+                    ar: `اعرف اكثر`,
+                    en: `howitworks_card_title_3`
                 },
                 text: {
-                    ar: "اعرف اكثر",
-                    en: "howitworks_card_text_3"
+                    ar: `هو برنامج لتعليم الأطفال من سن 5 سنوات وحتى 10 سنوات مهارات برمجة الإنسان الآلي Robot وتحريكه وتكوينه وضبط أوامره باستخدام تكنولوجيا IoT وبتدريب من متخصصين في مجال البرمجة والإلكترونيات. يستمر البرنامج طوال فترة صيف 2022، وينتهي بمسابقة كبرى في مجال تحريك الإنسان الآلي وضبطه بين الفرق المشاركة.`,
+                    en: `howitworks_card_text_3`
                 },
-            }
+            },
+            {
+                header: {
+                    ar: `Bingo`,
+                    en: `Bingo`
+                },
+                title: {
+                    ar: `اعرف اكثر`,
+                    en: `howitworks_card_title_3`
+                },
+                text: {
+                    ar: `هو برنامج للأطفال من سن 5 سنوات يقضي فيه المتدربون وقتًا لتعلم الكثير عن طرق وأنماط التفكير بطريقة اللعب والأنشطة والمسابقات، كما يضم مجموعة من ورش العمل الفنية والرحلات الترفيهية الصيفية.`,
+                    en: ``
+                },
+            },
         ],
         services_title: {
-            ar: "خدماتنا",
-            en: "Our Services"
+            ar: `خدماتنا`,
+            en: `Our Services`
         },
         services: [
             {
                 title: {
-                    ar: `ترينوبيا للأطفال و المراهقين`,
-                    en: ""
+                    ar: `ترينوبيا للأطفال  <br>و المراهقين`,
+                    en: ``
                 },
                 buttonL: {
                     ar: `الحدث القادم`,
@@ -175,8 +189,8 @@ export class Data {
             },
             {
                 title: {
-                    ar: "كود فالي",
-                    en: "Code Valley"
+                    ar: `كود فالي`,
+                    en: `Code Valley`
                 },
                 buttonL: {
                     ar: `الحدث القادم`,
@@ -186,12 +200,12 @@ export class Data {
                     ar: `اعرف أكثر`,
                     en: `Know More!`
                 },
-                color: "success"
+                color: `success`
             },        
             {
                 title: {
                     ar: `رحلاتنا`,
-                    en: "Trips"
+                    en: `Trips`
                 },
                 buttonL: {
                     ar: `الحدث القادم`,
@@ -201,12 +215,12 @@ export class Data {
                     ar: `اعرف أكثر`,
                     en: `Know More!`
                 },
-                color: "info"
+                color: `info`
             },
             {
                 title: {
                     ar: `الورش الفنية`,
-                    en: ""
+                    en: ``
                 },
                 buttonL: {
                     ar: `الحدث القادم`,
@@ -216,8 +230,12 @@ export class Data {
                     ar: `اعرف أكثر`,
                     en: `Know More!`
                 },
-                color: "primary"
+                color: `primary`
             }
         ]
+    }
+    static Colors = {
+        main: `#FDB813`,
+        secondary: `#12BCC3`
     }
 }

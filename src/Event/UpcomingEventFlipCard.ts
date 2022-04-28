@@ -21,10 +21,20 @@ export class UpcomingEventFlipCard extends LitElement {
         return html
         `
         <style>
-        .scene {
-          width: 260px;
-          height: 260px;
+        @media (min-width: 1400px) {
+          .scene {
+            width: 400px;
+            height: 400px;
+          }
         }
+
+        @media (max-width: 1400px) and (min-width: 300px) {
+          .scene {
+            width: 260px;
+            height: 260px;
+          }
+        }
+
         
         .FlipCard {
           width: 100%;
@@ -34,8 +44,12 @@ export class UpcomingEventFlipCard extends LitElement {
           cursor: pointer;
         }
         
+        .bg_transparent {
+          visibility: hidden;
+        }
+
         .FlipCard.is-flipped { 
-          background:white;         
+          background:transparent;         
           transform: rotateY(180deg);
         }
         
@@ -49,17 +63,17 @@ export class UpcomingEventFlipCard extends LitElement {
         }
         
         .FlipCard__face--front {
-          background:white;
+          background:transparent;
         }
         
         .FlipCard__face--back {
-          background:white;
+          background:transparent;
           transform: rotateY(180deg);
         }   
         </style>
         <div class="scene scene--FlipCard">
             <div class="FlipCard" @click=${this.toggle}>
-                <div class="FlipCard__face FlipCard__face--front"><slot name="front"></slot></div>
+                <div class="FlipCard__face FlipCard__face--front" id="front"><slot name="front"></slot></div>
                 <div class="FlipCard__face FlipCard__face--back"><slot name="back"></slot></div>
             </div>
         </div>
@@ -67,8 +81,20 @@ export class UpcomingEventFlipCard extends LitElement {
     }
 
     toggle(){
-        var FlipCard = this.renderRoot.querySelector('.FlipCard');        
-        FlipCard?.classList.toggle('is-flipped');
+        var flipCard = this.renderRoot.querySelector('.FlipCard');        
+        var frontFace = this.renderRoot.querySelector('#front');
+        
+        if(flipCard?.classList.contains('is-flipped')) {
+          setTimeout(() => {
+            frontFace?.classList.toggle('bg_transparent');      
+          }, 500);
+          flipCard?.classList.toggle('is-flipped');
+        } else {
+          flipCard?.classList.toggle('is-flipped');
+          frontFace?.classList.toggle('bg_transparent');                    
+        }
+        
+        
     }
 
 }
