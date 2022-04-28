@@ -1,9 +1,7 @@
 import { LitElement, html, css } from 'lit';
-import { Course } from './Course';
 import { Data } from '../Data';
 
-customElements.define('course-comp', Course);
-export class Courses extends LitElement {
+export class Services extends LitElement {
     IsRTL: unknown;
     
     createRenderRoot() {
@@ -56,11 +54,11 @@ export class Courses extends LitElement {
             ${Data.Localization.services.map(
                 element => html`
                     <li class="">
-                        <course-comp color="${element.color}" IsRTL=${this.IsRTL}
+                        <Service-comp color="${element.color}" IsRTL=${this.IsRTL}
                         Title=${(this.IsRTL === "true")? element.title.ar: element.title.en}                        
                         ButtonLeft_Text=${(this.IsRTL === "true")? element.buttonL.ar: element.buttonL.en}
                         ButtonRight_Text=${(this.IsRTL === "true")? element.buttonR.ar: element.buttonR.en}
-                        ></course-comp>
+                        ></Service-comp>
                     </li>
                 `
             )}

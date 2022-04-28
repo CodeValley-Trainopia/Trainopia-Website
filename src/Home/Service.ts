@@ -2,7 +2,7 @@ import { LitElement, html, css } from 'lit';
 import { property } from 'lit-element';
 import { Data } from '../Data';
 
-export class Course extends LitElement {
+export class Service extends LitElement {
     IsRTL: unknown;
     Color: unknown;
     Title: unknown;
@@ -59,34 +59,34 @@ export class Course extends LitElement {
         <div class="mb-3 border-0" dir=${(this.IsRTL === "true")? "rtl": "ltr"}>
             <div class="row ">                
                 <div class="col-md-6 col-sm-12">
-                    <div class="h-100">
-                        <div class="p-2">
+                    <div class="h-100 bg-${this.Color} rounded-3 p-5 shadow bg-gradient border-5 border-top-0 border-start-0 border-end-0 border-secondary">
+                        <div class="">
                             <div class="card-body border-5"  dir=${(this.IsRTL === "true")? "rtl": "ltr"}>
-                                <h5 class="card-title fw-thin display-1 text-${this.Color} lh-lg shadow3D">
+                                <h5 class="card-title fw-bolder display-1 text-white lh-lg shadow3D">
                                     ${(String(this.Title)).split('<br>').map(line => 
                                         html` ${line} <br>`
                                     )}
                                </h5>
-                               <p class="text-${this.Color} fw-light fs-4">
+                               <p class="text-white fw-light fs-4">
                                     ${Data.Localization.upcoming_events[0].text.ar}
                                </p>
                             </div>
                         </div>
-                        <div class="pb-4">
+                        <div class="">
                             <div class="row g-4">
                                 <div class="col-lg-6">
-                                    <button type="button" class="btn btn-${this.Color} shadow w-100">${this.ButtonLeft_Text}</button>
+                                    <button type="button" class="btn btn-dark shadow w-100 text-white fw-bolder fs-4">${this.ButtonLeft_Text}</button>
                                 </div>
                                 
                                 <div class="col-lg-6">
-                                    <button type="button" class="btn btn-outline-${this.Color} shadow w-100">${this.ButtonRight_Text}</button>
+                                    <button type="button" class="btn btn-light shadow w-100 text-dark fw-bolder fs-4">${this.ButtonRight_Text}</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12">
-                    <div class="card bg-${this.Color} shadow bg-gradient border-5 border-top-0 border-start-0 border-end-0 border-secondary h-100">
+                    <div class="card bg-${this.Color} shadow bg-gradient border-5 border-top-0 border-start-0 border-end-0 border-${this.Color}  h-100">
                         <img src="./assets/1.jpg" class="w-100 h-100 rounded-2" alt="..." style="object-fit: cover; object-position: 50% 20%;" />                                                
 
                     </div>

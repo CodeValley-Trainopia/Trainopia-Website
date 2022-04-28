@@ -46,7 +46,7 @@ export class Index extends LitElement {
     
         <br>
     
-        <courses-comp IsRTL=${this.IsRTL}></courses-comp>
+        <services-comp IsRTL=${this.IsRTL}></services-comp>
     
         <br>
     
