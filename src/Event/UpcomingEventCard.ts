@@ -40,14 +40,27 @@ export class UpcomingEventCard extends LitElement {
                 transform: translate(-100%,-25%) !important;
             }
 
+            @media (min-width: 1400px) {
+                .card_header  {
+                  width: 400px;
+                }
+              }
+      
+              @media (max-width: 1400px) and (min-width: 300px) {
+                .card-header  {
+                  width: 260px;
+                }
+              }
+
         </style>
 
-        <div class=" border-2 border-primary p-2 text-primary" style="max-width: 50rem;">
-            <div class="card-header border-5 mb-3 fs-4 fw-bold text-wrap" dir=${(this.IsRTL === "true")? "rtl": "ltr"}> 
-            ${this.Header} </div>
+        <div class=" border-2 border-primary p-2 text-primary" style="max-width: 50rem">
+            <div class="card_header card-header border-5 mb-3 fw-bolder" dir=${(this.IsRTL === "true")? "rtl": "ltr"} > 
+                    ${this.Header} 
+            </div>
 
             <upcoming_event_flip_card-comp>
-                <div slot="front" class="border-5 border-bottom border-primary h-100 rounded-3 position-relative"> 
+                <div slot="front" class="border-5 border-bottom border-primary h-100 rounded-3 position-relative overflow-auto" style="max-width:50rem;"> 
                     <div class="text-primary p-2">
                         <img src="./assets/1.jpg" class="w-100 h-50 rounded-2" alt="..." style="object-fit: cover; object-position: 50% 20%;" />                                                
                     
@@ -59,11 +72,11 @@ export class UpcomingEventCard extends LitElement {
                     </div>
                     
                 </div>
-                <div slot="back" class="border-5 border-bottom border-primary h-100 rounded-3">  
+                <div slot="back" class="border-5 border-bottom border-primary h-100 rounded-3 overflow-auto">  
                     <div class="text-primary">
                             
                         <div class="card-body" dir=${(this.IsRTL === "true")? "rtl": "ltr"}>
-                            <p class="card-text" style="font-size:90%;">${this.Text}</p>
+                            <p class="card-text lh-lg" style="font-size:90%">${this.Text}</p>
                         </div>
                     </div>
                 </div>
