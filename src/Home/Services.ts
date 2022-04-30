@@ -54,11 +54,11 @@ export class Services extends LitElement {
             ${Data.Localization.services.map(
                 element => html`
                     <li class="">
-                        <Service-comp color="${element.color}" IsRTL=${this.IsRTL}
+                        <service-comp color="${element.color}" IsRTL=${this.IsRTL}
                         Title=${(this.IsRTL === "true")? element.title.ar: element.title.en}                        
                         ButtonLeft_Text=${(this.IsRTL === "true")? element.buttonL.ar: element.buttonL.en}
                         ButtonRight_Text=${(this.IsRTL === "true")? element.buttonR.ar: element.buttonR.en}
-                        ></Service-comp>
+                        ></service-comp>
                     </li>
                 `
             )}

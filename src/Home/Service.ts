@@ -38,10 +38,7 @@ export class Service extends LitElement {
             text-shadow: 1px 1px #000, 
                          2px 2px #000, 
                          3px 3px #000;
-            -webkit-transition: all 0.12s ease-out;
-            -moz-transition:    all 0.12s ease-out;
-            -ms-transition:     all 0.12s ease-out;
-            -o-transition:      all 0.12s ease-out;
+            transition: all 0.12s ease-out;
          }
          .shadow3D:hover {
             position: relative; 

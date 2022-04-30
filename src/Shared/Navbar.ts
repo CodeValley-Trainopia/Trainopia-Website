@@ -96,9 +96,9 @@ export class Navbar extends LitElement {
                             ${(this.IsRTL === "true")? Data.Localization.menu_events.ar: Data.Localization.menu_events.en}
                             </a>
                             <ul class="dropdown-menu"  aria-labelledby="navbarDropdownMenuLink">                                
-                                <li><a class="dropdown-item fs-6 fw-bold text-primary text-muted" href="./events.html">Event-1</a></li>
-                                <li><a class="dropdown-item fs-6 fw-bold text-primary text-muted" href="./events.html">Event-2</a></li>
-                                <li><a class="dropdown-item fs-6 fw-bold text-primary text-muted" href="./events.html">Event-3</a></li>
+                                <li><a class="dropdown-item fs-6 fw-bold text-primary text-muted" href="./event.html">Event-1</a></li>
+                                <li><a class="dropdown-item fs-6 fw-bold text-primary text-muted" href="./event.html">Event-2</a></li>
+                                <li><a class="dropdown-item fs-6 fw-bold text-primary text-muted" href="./event.html">Event-3</a></li>
                             </ul>
                         </li>
                     </ul>
