@@ -7,7 +7,7 @@ import { Index } from './Home/Index.js';
 import { Service } from './Home/Service';
 import { Services } from './Home/Services.js';
 import { Jumbotron } from './Home/Jumbotron.js';
-import { Testimonial } from './Home/testimonial.js';
+import { Testimonial } from './Home/Testimonial.js';
 import { UpcomingEventCard } from './Home/UpcomingEventCard.js';
 import { UpcomingEvents } from './Home/UpcomingEvents.js';
 import { UpcomingEventFlipCard } from './Home/UpcomingEventFlipCard.js';
