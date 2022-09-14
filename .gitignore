@@ -18,7 +18,9 @@
 # build
 /_site/
 /dist/
+/dist-temp/
 /out-tsc/
+/assets/
 
 storybook-static
 custom-elements.json
