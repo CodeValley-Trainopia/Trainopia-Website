@@ -1,5 +1,5 @@
-import { LitElement, html, css } from 'lit-element';
-import { property } from 'lit-element';
+import { LitElement, html, css } from 'lit';
+import { property } from 'lit/decorators.js';
 
 
 export class Index extends LitElement {

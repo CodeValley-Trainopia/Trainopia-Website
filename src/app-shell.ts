@@ -19,7 +19,7 @@ import { EventOutput } from './Event/EventOutput.js';
 import { EventOutputCard } from './Event/EventOutputCard.js';
 import { EventActions } from './Event/EventActions.js';
 
-
+import { GalleryNavContent,GalleryContent } from './Gallery/Gallery.js';
 import { Form } from './Contact/Form.js';
 
 customElements.define('app-shell', AppShell);
@@ -44,3 +44,5 @@ customElements.define('event_output_card-comp', EventOutputCard);
 customElements.define('event_actions-comp', EventActions);
 
 customElements.define('contact_form-comp', Form);
+customElements.define('gallery-nav', GalleryNavContent);
+customElements.define('gallery-content', GalleryContent);
