@@ -1,11 +1,12 @@
 import { LitElement, html, css } from "lit"
-import data from "./Data.json" assert { type: "json" }
+import { Idata } from "./Data.Interface"
+import * as data from "./Data.json"
 export class GalleryNavContent extends LitElement {
     static get styles() {
         return css``
     }
 
-    entries = Object.values(data)
+    entries: Idata[] = data
     render() {
         return html`
             <div class="container">
@@ -111,60 +112,55 @@ export class GalleryContent extends LitElement {
             ${this.entries.map(
                 (i) => html`
                         ${i["data"].map(
-                            (tracks) => html`
-                                ${Object.values(tracks).map(
-                                    (track) =>
-                                        html`
-                                            <div
-                                                class="tab-pane fade"
-                                                id="${track.id_no_tab}"
-                                                role="tabpanel"
-                                                aria-labelledby="${track.id_tab}"
-                                            >
-                                                <div class="frame mx-auto">
-                                                    <div
-                                                        id="gallery"
-                                                        class="${track.className}"
+                            (track) => html`
+                                <div
+                                    class="tab-pane fade"
+                                    id="${track.id_no_tab}"
+                                    role="tabpanel"
+                                    aria-labelledby="${track.id_tab}"
+                                >
+                                    <div class="frame mx-auto">
+                                        <div
+                                            id="gallery"
+                                            class="${track.className}"
+                                            itemscope
+                                            itemtype="http://schema.org/ImageGallery"
+                                        >
+                                            ${track.Gallery.map(
+                                                (image) =>
+                                                    html`
+                                                
+                                                    <figure
+                                                        itemprop="associatedMedia"
                                                         itemscope
-                                                        itemtype="http://schema.org/ImageGallery"
+                                                        itemtype="http://schema.org/ImageObject"
                                                     >
-                                                        ${track.Gallery.map(
-                                                            (image) =>
-                                                                html`
-                                                                
-                                                                    <figure
-                                                                        itemprop="associatedMedia"
-                                                                        itemscope
-                                                                        itemtype="http://schema.org/ImageObject"
-                                                                    >
-                                                                        <a
-                                                                            href="${image.href}"
-                                                                            itemprop="contentUrl"
-                                                                            data-size="${image.data_size}"
-                                                                        >
-                                                                            <img
-                                                                                class="lazyload"
-                                                                                data-src="${image.data_src}"
-                                                                                itemprop="thumbnail"
-                                                                                alt="Image description"
-                                                                            />
-                                                                        </a>
-                                                                        <figcaption
-                                                                            itemprop="caption description"
-                                                                        >
-                                                                            Image
-                                                                            caption
-                                                                            1
-                                                                        </figcaption>
-                                                                    </figure>
-                                                                </div>
-                                                            `
-                                                        )}
-                                                    </div>
+                                                        <a
+                                                            href="${image.href}"
+                                                            itemprop="contentUrl"
+                                                            data-size="${image.data_size}"
+                                                        >
+                                                            <img
+                                                                class="lazyload"
+                                                                data-src="${image.data_src}"
+                                                                itemprop="thumbnail"
+                                                                alt="Image description"
+                                                            />
+                                                        </a>
+                                                        <figcaption
+                                                            itemprop="caption description"
+                                                        >
+                                                            Image
+                                                            caption
+                                                            1
+                                                        </figcaption>
+                                                    </figure>
                                                 </div>
-                                            </div>
-                                        `
-                                )}
+                                            `
+                                            )}
+                                        </div>
+                                    </div>
+                                </div>
                             `
                         )}
             </div>
