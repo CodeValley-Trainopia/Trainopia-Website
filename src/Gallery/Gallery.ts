@@ -1,11 +1,20 @@
 import { LitElement, html, css } from "lit"
+<<<<<<< HEAD
 import {GalleryData} from "./Data"
+=======
+import { Idata } from "./Data.Interface"
+import * as data from "./Data.json"
+>>>>>>> 7b8b129e3b692b8e4f8dcc8ef3d562c4bc59b74d
 export class GalleryNavContent extends LitElement {
     static get styles() {
         return css``
     }
 
+<<<<<<< HEAD
     entries=GalleryData.data
+=======
+    entries: Idata[] = data
+>>>>>>> 7b8b129e3b692b8e4f8dcc8ef3d562c4bc59b74d
     render() {
         return html`
             <div class="container">
