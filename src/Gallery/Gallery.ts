@@ -1,11 +1,11 @@
 import { LitElement, html, css } from "lit"
-import data from "./Data.json" assert { type: "json" }
+import {GalleryData} from "./Data"
 export class GalleryNavContent extends LitElement {
     static get styles() {
         return css``
     }
 
-    entries = Object.values(data)
+    entries=GalleryData.data
     render() {
         return html`
             <div class="container">
@@ -60,32 +60,27 @@ export class GalleryNavContent extends LitElement {
                                     ${i["name"]}
                                 </button>
                                 ${i["data"].map(
-                                    (tracks) => html`
+                                    (track) => html`
                                         <ul
                                             class="list-group collapse"
                                             id="${i["id"]}"
                                         >
-                                            ${Object.values(tracks).map(
-                                                (track) =>
-                                                    html`
-                                                        <li
-                                                            class="list-group-item"
-                                                        >
-                                                            <button
-                                                                class="btn"
-                                                                id="${track.id_tab}"
-                                                                data-bs-toggle="${track.data_bs_toggle}"
-                                                                data-bs-target="#${track.id_no_tab}"
-                                                                type="button"
-                                                                role="tab"
-                                                                aria-controls="${track.id_no_tab}"
-                                                                aria-selected="false"
-                                                            >
-                                                                ${track.name}
-                                                            </button>
-                                                        </li>
-                                                    `
-                                            )}
+                                        <li
+                                        class="list-group-item"
+                                    >
+                                        <button
+                                            class="btn"
+                                            id="${track.id_tab}"
+                                            data-bs-toggle="${track.data_bs_toggle}"
+                                            data-bs-target="#${track.id_no_tab}"
+                                            type="button"
+                                            role="tab"
+                                            aria-controls="${track.id_no_tab}"
+                                            aria-selected="false"
+                                        >
+                                            ${track.name}
+                                        </button>
+                                    </li>
                                         </ul>
                                     `
                                 )}
@@ -105,66 +100,61 @@ export class GalleryContent extends LitElement {
         return css``
     }
 
-    entries = Object.values(data)
+    entries = GalleryData.data
     render() {
         return html` <div class="tab-content my-5" id="v-pills-tabContent">
             ${this.entries.map(
                 (i) => html`
                         ${i["data"].map(
-                            (tracks) => html`
-                                ${Object.values(tracks).map(
-                                    (track) =>
-                                        html`
-                                            <div
-                                                class="tab-pane fade"
-                                                id="${track.id_no_tab}"
-                                                role="tabpanel"
-                                                aria-labelledby="${track.id_tab}"
-                                            >
-                                                <div class="frame mx-auto">
-                                                    <div
-                                                        id="gallery"
-                                                        class="${track.className}"
+                            (track) => html`
+                                <div
+                                    class="tab-pane fade"
+                                    id="${track.id_no_tab}"
+                                    role="tabpanel"
+                                    aria-labelledby="${track.id_tab}"
+                                >
+                                    <div class="frame mx-auto">
+                                        <div
+                                            id="gallery"
+                                            class="${track.className}"
+                                            itemscope
+                                            itemtype="http://schema.org/ImageGallery"
+                                        >
+                                            ${track.Gallery.map(
+                                                (image) =>
+                                                    html`
+                                                
+                                                    <figure
+                                                        itemprop="associatedMedia"
                                                         itemscope
-                                                        itemtype="http://schema.org/ImageGallery"
+                                                        itemtype="http://schema.org/ImageObject"
                                                     >
-                                                        ${track.Gallery.map(
-                                                            (image) =>
-                                                                html`
-                                                                
-                                                                    <figure
-                                                                        itemprop="associatedMedia"
-                                                                        itemscope
-                                                                        itemtype="http://schema.org/ImageObject"
-                                                                    >
-                                                                        <a
-                                                                            href="${image.href}"
-                                                                            itemprop="contentUrl"
-                                                                            data-size="${image.data_size}"
-                                                                        >
-                                                                            <img
-                                                                                class="lazyload"
-                                                                                data-src="${image.data_src}"
-                                                                                itemprop="thumbnail"
-                                                                                alt="Image description"
-                                                                            />
-                                                                        </a>
-                                                                        <figcaption
-                                                                            itemprop="caption description"
-                                                                        >
-                                                                            Image
-                                                                            caption
-                                                                            1
-                                                                        </figcaption>
-                                                                    </figure>
-                                                                </div>
-                                                            `
-                                                        )}
-                                                    </div>
+                                                        <a
+                                                            href="${image.href}"
+                                                            itemprop="contentUrl"
+                                                            data-size="${image.data_size}"
+                                                        >
+                                                            <img
+                                                                class="lazyload"
+                                                                data-src="${image.data_src}"
+                                                                itemprop="thumbnail"
+                                                                alt="Image description"
+                                                            />
+                                                        </a>
+                                                        <figcaption
+                                                            itemprop="caption description"
+                                                        >
+                                                            Image
+                                                            caption
+                                                            1
+                                                        </figcaption>
+                                                    </figure>
                                                 </div>
-                                            </div>
-                                        `
-                                )}
+                                            `
+                                            )}
+                                        </div>
+                                    </div>
+                                </div>
                             `
                         )}
             </div>
